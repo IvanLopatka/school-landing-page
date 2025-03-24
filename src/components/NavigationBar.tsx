@@ -4,7 +4,10 @@ import { FC } from "react";
 
 export const NavigationBar: FC = () => {
   return (
-    <div className="flex items-center gap-x-8 p-4">
+    <nav className="max-w-270 min-w-90 container-lg flex items-center gap-x-8 p-4">
+      <button className="max-[960px]:block mr-4 min-[960px]:hidden">
+        <Image src="/Vector.svg" alt="menu-hamburger" width={21} height={16} />
+      </button>
       <Image
         src="/WiSchool.svg"
         alt="Next.js logo"
@@ -13,7 +16,7 @@ export const NavigationBar: FC = () => {
         priority
         className="mr-20"
       />
-      <div className="flex gap-x-8 mr-30">
+      <div className="flex gap-x-8 mr-30 max-[960px]:hidden max-[1300px]:mr-10">
         <Link href="#">Home</Link>
         <Link href="#">Courses</Link>
         <Link href="#">Instructors</Link>
@@ -21,19 +24,24 @@ export const NavigationBar: FC = () => {
         <Link href="#">Contact Us</Link>
       </div>
       <div className="flex gap-[10px] font-sourceSansPro">
-        <button>
+        <button className="max-[960px]:hidden mr-4">
           <Image src="/bx_search.svg" alt="Search" width={24} height={24} />
         </button>
-        <button style={{ width: 75, height: 36 }} className="text-green-600">
-          Login
-        </button>
-        <button
-          style={{ width: 75, height: 36 }}
-          className="bg-green-500 text-white text-[16px] rounded-[5px] text-base px-[8px]"
-        >
-          Register
+        <div className="flex gap-[10px] max-[1150px]:hidden">
+          <button className="text-green-600">Login</button>
+          <button className="bg-green-500 text-white text-[16px] rounded-[5px] text-base px-[16px] py-[8px]">
+            Register
+          </button>
+        </div>
+        <button className="min-[960px]:hidden flex items-center">
+          <Image
+            src="/carbon_user-avatar.svg"
+            alt="cart-icon"
+            width={32}
+            height={32}
+          />
         </button>
       </div>
-    </div>
+    </nav>
   );
 };
