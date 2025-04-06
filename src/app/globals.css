@@ -6,6 +6,11 @@
 }
 
 @theme inline {
+  --blur-700: 700px;
+
+  --color-bg_img: #e4ffff;
+  --color-button: #09b451;
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
