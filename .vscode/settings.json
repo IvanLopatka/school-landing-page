@@ -1,0 +1,6 @@
+{
+  "terminal.integrated.scrollback": 10,
+  "terminal.integrated.mouseWheelScrollSensitivity": 0.25,
+  "terminal.integrated.fastScrollSensitivity": 0,
+  "editor.fastScrollSensitivity": 1
+}
