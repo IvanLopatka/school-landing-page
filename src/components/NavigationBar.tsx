@@ -4,7 +4,7 @@ import { FC } from "react";
 
 export const NavigationBar: FC = () => {
   return (
-    <nav className="max-w-270 min-w-90 container-lg flex items-center gap-x-8 p-4">
+    <nav className="max-w-[1440px] container-lg flex items-center gap-x-8 p-4">
       <button className="max-[960px]:block mr-4 min-[960px]:hidden">
         <Image src="/Vector.svg" alt="menu-hamburger" width={21} height={16} />
       </button>
@@ -28,8 +28,8 @@ export const NavigationBar: FC = () => {
           <Image src="/bx_search.svg" alt="Search" width={24} height={24} />
         </button>
         <div className="flex gap-[10px] max-[1150px]:hidden">
-          <button className="text-green-600">Login</button>
-          <button className="bg-green-500 text-white text-[16px] rounded-[5px] text-base px-[16px] py-[8px]">
+          <button className="text-button">Login</button>
+          <button className="bg-button text-white text-[16px] rounded-[5px] text-base px-[16px] py-[8px]">
             Register
           </button>
         </div>
