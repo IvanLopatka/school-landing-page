@@ -4,8 +4,8 @@ import { FC } from "react";
 
 export const NavigationBar: FC = () => {
   return (
-    <nav className="max-w-[1440px] container-lg flex items-center gap-x-24 p-4">
-      <button className="max-[960px]:block mr-4 min-[960px]:hidden">
+    <nav className="max-w-[1440px] container-lg flex items-center gap-x-24 max-[700px]:gap-x-6 max-[700px]:ml-10 p-4">
+      <button className="max-[960px]:block mr-1 min-[960px]:hidden shrink-0">
         <Image src="/Vector.svg" alt="menu-hamburger" width={21} height={16} />
       </button>
       <Image
@@ -14,7 +14,7 @@ export const NavigationBar: FC = () => {
         width={132}
         height={31}
         priority
-        className="mr-20"
+        className="mr-20 max-[700px]:mr-10"
       />
       <div className="flex gap-x-8 mr-10 ml-10 max-[960px]:hidden max-[1300px]:mr-10">
         <Link href="#">Home</Link>
@@ -33,7 +33,7 @@ export const NavigationBar: FC = () => {
             Register
           </button>
         </div>
-        <button className="min-[960px]:hidden flex items-center">
+        <button className="min-[960px]:hidden flex items-center shrink-0 right-1 ml-30">
           <Image
             src="/carbon_user-avatar.svg"
             alt="cart-icon"
