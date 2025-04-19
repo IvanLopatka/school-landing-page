@@ -41,7 +41,7 @@ export const FirstFrame: React.FC = () => {
             Amazing students around the globe
           </p>
         </div>
-        <div className="bg-bg_img mt-[110px] w-[107px] h-[605px] left-[30px] flex relative z-[-1] items-center -top-15 min-[1000px]:rounded-tr-[30px] min-[1000px]:rounded-br-[30px] max-[1000px]:h-[1011px] max-[1000px]:w-[107px] max-[1000px]:-top-90"></div>
+        <div className="bg-bg-img mt-[110px] w-[107px] h-[605px] left-[30px] flex relative z-[-1] items-center -top-15 min-[1000px]:rounded-tr-[30px] min-[1000px]:rounded-br-[30px] max-[1000px]:h-[1011px] max-[1000px]:w-[107px] max-[1000px]:-top-90"></div>
       </div>
 
       <div className="z-3 absolute top-[120px] left-[40px] w-[589px] h-[270px] max-[600px]:left-0 flex flex-col">
