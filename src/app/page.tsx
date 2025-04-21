@@ -1,10 +1,10 @@
-import { NavigationBar } from "@/components";
-import { FirstFrame } from "@/components";
-import { SecondFrame } from "@/components";
+import { NavigationBar } from '@/components';
+import { FirstFrame } from '@/components';
+import { SecondFrame } from '@/components';
 
 export default function Home() {
   return (
-    <div className="items-center grid grid-rows-[auto_1fr_auto] justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-10 font-[family-name:var(--font-geist-sans)]">
+    <div className="@container grid min-h-screen grid-rows-[auto_1fr_auto] items-center justify-items-center gap-16 p-8 pb-20 font-[family-name:var(--font-geist-sans)] sm:p-10">
       <NavigationBar />
       <FirstFrame />
     </div>
