@@ -7,15 +7,14 @@ export const FirstFrame: React.FC = () => {
       <div className="relative mx-auto flex max-w-7xl flex-col justify-between lg:flex-row">
         {/* Left content */}
         <div className="relative z-10 space-y-8 lg:w-1/2">
-          <div className="space-y-4">
+          <div className="flex max-h-[270px] max-w-[590px] flex-col space-y-4">
             <h1 className="text-5xl font-bold md:text-6xl">
               Quality{' '}
               <span className="text-green-600">
                 Education
               </span>{' '}
               By Any Means
-              <br />
-              Necessary.
+              <span>Necessary.</span>
             </h1>
           </div>
 
