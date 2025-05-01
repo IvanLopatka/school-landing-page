@@ -6,7 +6,7 @@
 }
 
 @theme inline {
-  --blur-700: 700px;
+  --blur-700xs: 700px;
 
   --color-light-green: #ddffff;
   --color-bg-img: #e4ffff;
