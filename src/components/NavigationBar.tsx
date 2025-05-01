@@ -5,7 +5,7 @@ import { FC } from 'react';
 export const NavigationBar: FC = () => {
   return (
     <nav className="w-full">
-      <div className="container mx-auto flex items-center justify-between gap-x-20 px-4 py-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto flex items-center gap-x-20 px-4 py-4 sm:px-6 lg:px-8">
         <div className="flex shrink-0 items-center gap-x-6 md:gap-x-24">
           <button className="md:hidden">
             <Image
@@ -21,7 +21,7 @@ export const NavigationBar: FC = () => {
             width={132}
             height={31}
           />
-          <button className="ml-5 shrink-0 md:hidden">
+          <button className="absolute right-8 ml-5 shrink-0 md:hidden">
             <Image
               src="/carbon_user-avatar.svg"
               alt="cart-icon"
