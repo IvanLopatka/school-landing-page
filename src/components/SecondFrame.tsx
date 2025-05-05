@@ -4,8 +4,8 @@ import { FC } from 'react';
 
 export const SecondFrame: FC = () => {
   return (
-    <div className="grid h-[60px] w-full max-w-[80vw] grid-cols-[auto_auto_auto_auto_auto] gap-x-8">
-      <div className="bg-light-green items-centers flex h-[60px] w-max max-w-55 gap-3 rounded-[5px] p-4">
+    <div className="flex h-[60px] w-full max-w-[80vw] min-w-[430px] flex-wrap items-center justify-center gap-6 [&>*]:min-w-[200px]">
+      <div className="bg-light-green items-centers flex h-[60px] w-max flex-row gap-3 rounded-[5px] p-4">
         <Image
           src={'/math-icon.svg'}
           alt="Math Icon"
