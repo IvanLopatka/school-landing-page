@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
   --background: #ffffff;
@@ -6,8 +6,6 @@
 }
 
 @theme inline {
-  --blur-700: 700px;
-
   --color-light-green: #ddffff;
   --color-bg-img: #e4ffff;
   --color-button: #09b451;
@@ -16,6 +14,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --gradient-color: #09b451;
 }
 
 body {

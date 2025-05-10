@@ -1,57 +1,54 @@
-import Image from "next/image";
-import React from "react";
-import { FC } from "react";
+import Image from 'next/image';
+import React from 'react';
+import { FC } from 'react';
+
+const items = [
+  {
+    title: 'Problem Solving',
+    iconUrl: '/problem-solving.svg',
+    iconAlt: 'Mathematics',
+  },
+  {
+    title: 'Live chat',
+    iconUrl: '/chat.svg',
+    iconAlt: 'Chat Message',
+  },
+  {
+    title: 'Group Reading',
+    iconUrl: '/group-reading.svg',
+    iconAlt: 'People',
+  },
+  {
+    title: '10k Courses',
+    iconUrl: '/courses.svg',
+    iconAlt: 'Book',
+  },
+  {
+    title: 'Hand-on activities',
+    iconUrl: '/hands.svg',
+    iconAlt: 'Hands',
+  },
+];
 
 export const SecondFrame: FC = () => {
   return (
-    <div className="mt-10">
-      <div className="grid grid-cols-[auto_auto_auto_auto_auto] gap-x-12 w-full max-w-[1227px] h-[60px]">
-        <div className="flex w-max p-4 h-[60px] bg-light-green items-centers rounded-[5px] gap-3">
+    <div className="flex max-h-[60px] w-full max-w-screen flex-wrap items-center justify-center gap-3 min-[430px]:gap-6 [&>*]:max-w-[220px]">
+      {items.map((item) => (
+        <div
+          key={item.title}
+          className="bg-light-green items-centers max-[430px]:w-40vw flex max-h-[60px] w-full max-w-55 gap-3 rounded-[5px] p-4"
+        >
           <Image
-            src={"/math-icon.svg"}
-            alt="Math Icon"
+            src={item.iconUrl}
+            alt={item.iconAlt}
             width={40}
             height={40}
           />
-          <p className="Poppins text-[16px]">Problem Solving</p>
+          <p className="Poppins text-[16px]">
+            {item.title}
+          </p>
         </div>
-        <div className="flex w-max p-4 h-[60px] bg-light-green items-centers rounded-[5px] gap-3">
-          <Image
-            src={"/math-icon.svg"}
-            alt="Math Icon"
-            width={40}
-            height={40}
-          />
-          <p className="Poppins text-[16px]">Live chat</p>
-        </div>
-        <div className="flex w-max p-4 h-[60px] bg-light-green items-centers rounded-[5px] gap-3">
-          <Image
-            src={"/math-icon.svg"}
-            alt="Math Icon"
-            width={40}
-            height={40}
-          />
-          <p className="Poppins text-[16px]">Group Reading</p>
-        </div>
-        <div className="flex w-max p-4 h-[60px] bg-light-green items-centers rounded-[5px] gap-3">
-          <Image
-            src={"/math-icon.svg"}
-            alt="Math Icon"
-            width={40}
-            height={40}
-          />
-          <p className="Poppins text-[16px]">10k Courses</p>
-        </div>
-        <div className="flex w-max p-4 h-[60px] bg-light-green items-centers rounded-[5px] gap-3">
-          <Image
-            src={"/math-icon.svg"}
-            alt="Math Icon"
-            width={40}
-            height={40}
-          />
-          <p className="Poppins text-[16px]">Hand-on activities</p>
-        </div>
-      </div>
+      ))}
     </div>
   );
 };

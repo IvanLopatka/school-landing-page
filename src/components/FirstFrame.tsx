@@ -3,19 +3,17 @@ import Image from 'next/image';
 
 export const FirstFrame: React.FC = () => {
   return (
-    <div className="relative w-full py-16">
-      <div className="relative mx-auto flex max-w-7xl flex-col justify-between lg:flex-row">
+    <div className="relative w-full overflow-hidden rounded-[50px] p-16">
+      <div className="relative mx-auto flex max-w-7xl flex-col justify-between gap-4 lg:flex-row">
         {/* Left content */}
-        <div className="relative z-10 space-y-8 lg:w-1/2">
-          <div className="space-y-4">
-            <h1 className="text-5xl font-bold md:text-6xl">
+        <div className="relative z-10 space-y-8 lg:w-[70%]">
+          <div className="flex max-h-[270px] w-full max-w-[600px] flex-col space-y-4">
+            <h1 className="text-3xl leading-10 font-bold min-[430px]:leading-10 sm:leading-20 md:text-6xl">
               Quality{' '}
               <span className="text-green-600">
-                Education
+                Education <br />
               </span>{' '}
-              By Any Means
-              <br />
-              Necessary.
+              By Any Means Necessary.
             </h1>
           </div>
 
@@ -25,7 +23,7 @@ export const FirstFrame: React.FC = () => {
         </div>
 
         {/* Right content */}
-        <div className="relative mt-12 lg:mt-0 lg:w-1/2">
+        <div className="relative mt-12 max-[580]:scale-[0.8] max-[580px]:left-10 lg:mt-0 lg:w-1/2">
           <div className="relative">
             <Image
               src="/i-m-prepared-exam.png"
@@ -36,7 +34,7 @@ export const FirstFrame: React.FC = () => {
             />
 
             {/* Floating card - instructors */}
-            <div className="absolute top-[20%] right-[20%] z-10 max-w-[262px] rounded-[20px] bg-white p-6 shadow-lg">
+            <div className="absolute bottom-[15%] left-[-20%] z-10 max-w-[262px] justify-center rounded-[20px] bg-white p-4 text-center shadow-lg max-[580px]:scale-[0.8]">
               <p className="mb-5 text-[20px] font-semibold">
                 Learn from best{' '}
                 <span className="text-green-600">
@@ -49,11 +47,12 @@ export const FirstFrame: React.FC = () => {
                 alt="Five Mens Icon"
                 width={154}
                 height={46}
+                className="mx-auto"
               />
             </div>
 
             {/* Floating stats card */}
-            <div className="absolute right-0 bottom-[20%] max-w-[129px] rounded-[6.89px] bg-white p-4 text-center shadow-lg">
+            <div className="absolute right-0 bottom-[5%] max-w-[129px] rounded-[6.89px] bg-white p-4 text-center shadow-lg max-[580]:right-[-10%] max-[580px]:scale-[0.8]">
               <Image
                 src="/FirstFrame-Icon.svg"
                 alt="Icon"
@@ -71,6 +70,7 @@ export const FirstFrame: React.FC = () => {
           </div>
         </div>
       </div>
+      <div className="absolute bottom-[-20%] left-[-20%] -z-10 h-[700px] w-[700px] rounded-full bg-radial from-[var(--gradient-color)] to-white opacity-10 blur-3xl" />
     </div>
   );
 };

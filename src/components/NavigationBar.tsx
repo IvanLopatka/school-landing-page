@@ -5,9 +5,9 @@ import { FC } from 'react';
 export const NavigationBar: FC = () => {
   return (
     <nav className="w-full">
-      <div className="container mx-auto flex items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-        <div className="flex items-center gap-x-6 md:gap-x-24">
-          <button className="shrink-0 md:hidden">
+      <div className="container mx-auto flex items-center gap-x-20 px-4 py-4 sm:px-6 lg:px-8">
+        <div className="flex shrink-0 items-center gap-x-6 md:gap-x-24">
+          <button className="md:hidden">
             <Image
               src="/Vector.svg"
               alt="menu-hamburger"
@@ -20,8 +20,15 @@ export const NavigationBar: FC = () => {
             alt="Next.js logo"
             width={132}
             height={31}
-            priority
           />
+          <button className="absolute right-8 ml-5 shrink-0 md:hidden">
+            <Image
+              src="/carbon_user-avatar.svg"
+              alt="cart-icon"
+              width={32}
+              height={32}
+            />
+          </button>
         </div>
 
         <div className="hidden gap-x-8 md:flex">
@@ -47,14 +54,6 @@ export const NavigationBar: FC = () => {
               Register
             </button>
           </div>
-          <button className="md:hidden">
-            <Image
-              src="/carbon_user-avatar.svg"
-              alt="cart-icon"
-              width={32}
-              height={32}
-            />
-          </button>
         </div>
       </div>
     </nav>
