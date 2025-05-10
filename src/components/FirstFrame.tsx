@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export const FirstFrame: React.FC = () => {
   return (
-    <div className="relative w-full py-16">
+    <div className="relative w-full overflow-hidden rounded-[50px] p-16">
       <div className="relative mx-auto flex max-w-7xl flex-col justify-between gap-4 lg:flex-row">
         {/* Left content */}
         <div className="relative z-10 space-y-8 lg:w-[70%]">
@@ -70,7 +70,7 @@ export const FirstFrame: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="blur-700xs absolute bottom-[10%] left-[5%] h-[200px] w-[200px] rounded-full bg-amber-600"></div>
+      <div className="absolute bottom-[-20%] left-[-20%] -z-10 h-[700px] w-[700px] rounded-full bg-radial from-[var(--gradient-color)] to-white opacity-10 blur-3xl" />
     </div>
   );
 };
