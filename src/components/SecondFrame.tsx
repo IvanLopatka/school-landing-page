@@ -32,11 +32,11 @@ const items = [
 
 export const SecondFrame: FC = () => {
   return (
-    <div className="flex max-h-[60px] w-full max-w-screen flex-wrap items-center justify-center gap-3 min-[430px]:gap-6 [&>*]:max-w-[220px]">
+    <div className="z-10 flex max-h-[60px] w-full max-w-screen flex-wrap items-center justify-center gap-3 min-[430px]:gap-6">
       {items.map((item) => (
         <div
           key={item.title}
-          className="bg-light-green items-centers max-[430px]:w-40vw flex max-h-[60px] w-full max-w-55 gap-3 rounded-[5px] p-4"
+          className="bg-light-green items-centers max-[430px]:w-40vw flex max-h-[60px] w-full max-w-[200px] gap-3 rounded-[5px] p-3"
         >
           <Image
             src={item.iconUrl}
@@ -44,7 +44,7 @@ export const SecondFrame: FC = () => {
             width={40}
             height={40}
           />
-          <p className="Poppins text-[16px]">
+          <p className="Poppins text-[14px]">
             {item.title}
           </p>
         </div>

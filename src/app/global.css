@@ -7,7 +7,7 @@
 
 @theme inline {
   --color-light-green: #ddffff;
-  --color-bg-img: #e4ffff;
+  --color-bg-palette: #e4ffff;
   --color-button: #09b451;
 
   --color-background: var(--background);

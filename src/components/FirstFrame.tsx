@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export const FirstFrame: React.FC = () => {
   return (
-    <div className="relative w-full overflow-hidden rounded-[50px] p-16">
+    <div className="relative w-full overflow-hidden rounded-[50px] p-6">
       <div className="relative mx-auto flex max-w-7xl flex-col justify-between gap-4 lg:flex-row">
         {/* Left content */}
         <div className="relative z-10 space-y-8 lg:w-[70%]">
@@ -23,18 +23,18 @@ export const FirstFrame: React.FC = () => {
         </div>
 
         {/* Right content */}
-        <div className="relative mt-12 max-[580]:scale-[0.8] max-[580px]:left-10 lg:mt-0 lg:w-1/2">
+        <div className="relative mt-12 max-[1024px]:scale-[0.8] max-[580px]:left-0 lg:mt-0 lg:w-1/2">
           <div className="relative">
             <Image
               src="/i-m-prepared-exam.png"
               alt="I'm prepared for exam"
               width={431}
               height={508}
-              className="rounded-tl-[40px] rounded-tr-[40px] rounded-br-[100px] rounded-bl-[40px]"
+              className="min-w-[350px] rounded-tl-[40px] rounded-tr-[40px] rounded-br-[100px] rounded-bl-[40px]"
             />
 
             {/* Floating card - instructors */}
-            <div className="absolute bottom-[15%] left-[-20%] z-10 max-w-[262px] justify-center rounded-[20px] bg-white p-4 text-center shadow-lg max-[580px]:scale-[0.8]">
+            <div className="absolute bottom-[15%] left-[-20%] z-10 max-w-[262px] justify-center rounded-[20px] bg-white p-4 text-center shadow-lg">
               <p className="mb-5 text-[20px] font-semibold">
                 Learn from best{' '}
                 <span className="text-green-600">
@@ -52,7 +52,7 @@ export const FirstFrame: React.FC = () => {
             </div>
 
             {/* Floating stats card */}
-            <div className="absolute right-0 bottom-[5%] max-w-[129px] rounded-[6.89px] bg-white p-4 text-center shadow-lg max-[580]:right-[-10%] max-[580px]:scale-[0.8]">
+            <div className="absolute right-0 bottom-[5%] max-w-[129px] rounded-[6.89px] bg-white p-4 text-center shadow-lg max-[580px]:right-[-10%]">
               <Image
                 src="/FirstFrame-Icon.svg"
                 alt="Icon"
@@ -69,6 +69,7 @@ export const FirstFrame: React.FC = () => {
             </div>
           </div>
         </div>
+        <div className="bg-bg-palette absolute z-10 max-h-full w-[107px]"></div>
       </div>
       <div className="absolute bottom-[-20%] left-[-20%] -z-10 h-[700px] w-[700px] rounded-full bg-radial from-[var(--gradient-color)] to-white opacity-10 blur-3xl" />
     </div>
