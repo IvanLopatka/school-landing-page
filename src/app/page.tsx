@@ -1,6 +1,8 @@
 import { NavigationBar } from '@/components';
 import { FirstFrame } from '@/components';
 import { SecondFrame } from '@/components';
+import { ScrollList } from '@/components';
+import { CardCourses } from '@/components';
 
 export default function Home() {
   return (
@@ -11,7 +13,12 @@ export default function Home() {
           <FirstFrame />
         </main>
 
-        <SecondFrame />
+        <div className="relative mb-40">
+          <SecondFrame />
+        </div>
+        <div className="mt-5 px-8">
+          <CardCourses />
+        </div>
       </div>
     </div>
   );
