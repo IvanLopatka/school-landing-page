@@ -29,7 +29,7 @@ const items = [
     iconAlt: 'discussion',
   },
   {
-    iconTitle: 'Ethical Harking is not hard as you think',
+    iconTitle: 'Ethical Hacking is not hard as you think',
     iconUrl: '/hacker-course.png',
     iconAlt: 'Hacker',
   },
@@ -37,12 +37,12 @@ const items = [
 
 export const CardCourses: FC = () => {
   return (
-    <div className="w-full">
-      <div className="w-90vw mb-15 flex justify-center">
-        <h1 className="Poppins text-3xl font-semibold max-[540px]:text-2xl">
+    <div className="w-full justify-center">
+      <div className="w-90vw mb-15 flex justify-center pr-20">
+        <h1 className="Poppins text-3xl font-semibold max-[1000px]:text-2xl">
           Most Popular courses
         </h1>
-        <button className="bg-button ml-auto flex max-h-[46px] max-w-[130px] gap-1 rounded-[50px] px-4 py-2 max-[540px]:scale-[0.9]">
+        <button className="bg-button ml-auto flex h-[46px] w-[130px] gap-1 rounded-[30px] px-4 py-2 max-[1000px]:scale-[0.9]">
           <Image
             src="/sort.svg"
             alt="Sort"
@@ -55,11 +55,11 @@ export const CardCourses: FC = () => {
         </button>
       </div>
 
-      <div className="flex w-[90vw] flex-row flex-wrap gap-10">
+      <div className="flex w-[90vw] flex-row flex-wrap gap-10 max-[450px]:gap-5">
         {items.map((item) => (
           <div
             key={item.iconTitle}
-            className="flex max-h-1/2 max-w-1/3 flex-col"
+            className="flex max-h-1/2 max-w-1/3 flex-col shadow-sm max-[1000px]:min-w-[180px]"
           >
             <Image
               src={item.iconUrl}
@@ -68,10 +68,10 @@ export const CardCourses: FC = () => {
               height={215}
               className="mb-5 rounded-t-[10px]"
             />
-            <div className="mb-8 flex max-w-[379px] items-start px-6">
-              <h1 className="text-xl font-medium">
+            <div className="mb-8 flex max-w-[379px] items-start px-6 max-[1000px]:mb-4 max-[500px]:pl-3">
+              <h1 className="line-clamp-2 text-xl font-medium max-[900px]:text-base">
                 {item.iconTitle}
-              </h1>{' '}
+              </h1>
               <div className="ml-auto flex gap-[6px]">
                 <Image
                   src="/star-rating.svg"
@@ -82,26 +82,29 @@ export const CardCourses: FC = () => {
                 <h2>4.5</h2>
               </div>
             </div>
-            <div className="align-center flex flex-row">
-              <p className="px-5 text-base font-medium">
-                6 weeks
-              </p>
-              <div className="flex flex-row items-center justify-center gap-2">
-                <Image
-                  src="/group.svg"
-                  alt="group"
-                  width={16}
-                  height={16}
-                />
-                <div className="flex flex-row gap-20">
-                  <h1 className="text-base font-medium">
-                    1.5k Students
-                  </h1>
-                  <h2 className="text-button text-xl font-semibold">
-                    30.5$
-                  </h2>
+            <div className="flex flex-row items-center px-6 max-[1000px]:flex-col-reverse max-[1000px]:items-start">
+              <div className="mb-5 flex flex-row items-center gap-3 whitespace-nowrap">
+                <p className="text-base font-medium max-[1000px]:font-normal max-[600px]:text-xs">
+                  6 weeks
+                </p>
+                <div className="flex flex-row items-center justify-center gap-3">
+                  <Image
+                    src="/group.svg"
+                    alt="group"
+                    width={16}
+                    height={16}
+                  />
+                  <div className="flex flex-row">
+                    <h1 className="text-base font-medium max-[1000px]:font-normal max-[600px]:text-xs">
+                      1.5k Students
+                    </h1>
+                  </div>
                 </div>
               </div>
+
+              <h2 className="text-button ml-auto px-1 text-xl font-semibold max-[1000px]:mb-5 max-[1000px]:ml-0">
+                30.5$
+              </h2>
             </div>
           </div>
         ))}

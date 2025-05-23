@@ -16,7 +16,10 @@ export default function Home() {
         <div className="relative mb-40">
           <SecondFrame />
         </div>
-        <div className="mt-5 px-8">
+        <div className="container mb-10">
+          <ScrollList />
+        </div>
+        <div className="container mt-5 justify-center px-8">
           <CardCourses />
         </div>
       </div>
