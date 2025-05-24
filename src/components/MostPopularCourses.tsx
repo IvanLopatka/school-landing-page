@@ -35,14 +35,14 @@ const items = [
   },
 ];
 
-export const CardCourses: FC = () => {
+export const MostPopularCourses: FC = () => {
   return (
-    <div className="w-full justify-center">
-      <div className="w-90vw mb-15 flex justify-center pr-20">
+    <div className="container mx-auto mt-5 justify-center">
+      <div className="mb-15 flex w-full justify-between">
         <h1 className="Poppins text-3xl font-semibold max-[1000px]:text-2xl">
           Most Popular courses
         </h1>
-        <button className="bg-button ml-auto flex h-[46px] w-[130px] gap-1 rounded-[30px] px-4 py-2 max-[1000px]:scale-[0.9]">
+        <button className="bg-button flex h-[46px] w-[130px] gap-1 rounded-[30px] px-4 py-2 max-[1000px]:scale-[0.9]">
           <Image
             src="/sort.svg"
             alt="Sort"
@@ -55,18 +55,18 @@ export const CardCourses: FC = () => {
         </button>
       </div>
 
-      <div className="flex w-[90vw] flex-row flex-wrap gap-10 max-[450px]:gap-5">
+      <div className="flex flex-row flex-wrap justify-center gap-10 max-[450px]:gap-5">
         {items.map((item) => (
           <div
             key={item.iconTitle}
-            className="flex max-h-1/2 max-w-1/3 flex-col shadow-sm max-[1000px]:min-w-[180px]"
+            className="flex max-w-1/3 flex-col overflow-hidden rounded-[5px] shadow-sm max-[1000px]:min-w-[180px] md:rounded-[10px]"
           >
             <Image
               src={item.iconUrl}
               alt={item.iconAlt}
               width={391}
               height={215}
-              className="mb-5 rounded-t-[10px]"
+              className="mb-5"
             />
             <div className="mb-8 flex max-w-[379px] items-start px-6 max-[1000px]:mb-4 max-[500px]:pl-3">
               <h1 className="line-clamp-2 text-xl font-medium max-[900px]:text-base">
