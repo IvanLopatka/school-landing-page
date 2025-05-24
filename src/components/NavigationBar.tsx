@@ -5,7 +5,7 @@ import { FC } from 'react';
 export const NavigationBar: FC = () => {
   return (
     <nav className="w-full">
-      <div className="container mx-auto flex items-center gap-x-20 px-4 py-4 sm:px-6 lg:px-8">
+      <div className="max-w-90vw container mx-auto flex items-center gap-x-20 px-4 py-4 sm:px-6 lg:px-8 lg:pr-26">
         <div className="flex shrink-0 items-center gap-x-6 md:gap-x-24">
           <button className="md:hidden">
             <Image
@@ -39,7 +39,7 @@ export const NavigationBar: FC = () => {
           <Link href="#">Contact Us</Link>
         </div>
 
-        <div className="font-sourceSansPro flex items-center gap-[10px]">
+        <div className="font-sourceSansPro ml-auto flex items-center gap-[10px]">
           <button className="hidden md:block">
             <Image
               src="/bx_search.svg"
