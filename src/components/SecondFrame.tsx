@@ -36,7 +36,7 @@ export const SecondFrame: FC = () => {
       {items.map((item) => (
         <div
           key={item.title}
-          className="bg-light-green max-[430px]:w-40vw flex max-h-[60px] w-full max-w-[200px] items-center gap-3 rounded-[5px] p-3"
+          className="bg-light-green max-[430px]:w-40vw flex max-h-[60px] w-full max-w-[190px] items-center gap-3 rounded-[5px] p-3 text-nowrap"
         >
           <Image
             src={item.iconUrl}

@@ -23,8 +23,8 @@ export const FirstFrame: React.FC = () => {
         </div>
 
         {/* Right content */}
-        <div className="relative mt-12 max-[1024px]:scale-[0.8] max-[580px]:left-0 lg:mt-0 lg:w-1/2">
-          <div className="relative">
+        <div className="relative mt-12 ml-auto scale-[0.8] justify-end lg:mt-0 lg:w-1/2 lg:scale-none">
+          <div className="relative max-w-[405px] lg:max-w-full">
             <Image
               src="/i-m-prepared-exam.png"
               alt="I'm prepared for exam"
@@ -52,7 +52,7 @@ export const FirstFrame: React.FC = () => {
             </div>
 
             {/* Floating stats card */}
-            <div className="absolute right-0 bottom-[5%] max-w-[129px] rounded-[6.89px] bg-white p-4 text-center shadow-lg max-[580px]:right-[-10%]">
+            <div className="absolute right-[-10%] bottom-[5%] max-w-[129px] rounded-[6.89px] bg-white p-4 text-center shadow-lg xl:right-[5%]">
               <Image
                 src="/FirstFrame-Icon.svg"
                 alt="Icon"
