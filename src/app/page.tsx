@@ -2,6 +2,7 @@ import { NavigationBar } from '@/components';
 import { FirstFrame } from '@/components';
 import { SecondFrame } from '@/components';
 import { MostPopularCourses } from '@/components';
+import { MeetOurInstructors } from '@/components';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <FirstFrame />
         <SecondFrame />
         <MostPopularCourses />
+        <MeetOurInstructors />
       </div>
     </div>
   );
