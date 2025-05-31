@@ -1,37 +1,62 @@
 import Image from 'next/image';
 import React from 'react';
 import { FC } from 'react';
+import { CourseCard } from './CourseCard';
 const items = [
   {
     iconTitle: 'Learn Marketing from Top Instructors.',
     iconUrl: '/instructors_marketing.png',
     iconAlt: 'Learn marketing',
+    coursePeriod: '6 weeks',
+    grade: '4.5',
+    amountOfStudents: '1.5k',
+    price: '30.5$',
   },
   {
     iconTitle:
       'Front-end development is not hard as you think',
     iconUrl: '/man-hold-laptop.png',
     iconAlt: 'Man with laptop',
+    coursePeriod: '6 weeks',
+    grade: '4.5',
+    amountOfStudents: '1.5k',
+    price: '30.5$',
   },
   {
     iconTitle: 'Everything you need to know in UX',
     iconUrl: '/UX-course.png',
     iconAlt: 'Technology',
+    coursePeriod: '6 weeks',
+    grade: '4.5',
+    amountOfStudents: '1.5k',
+    price: '30.5$',
   },
   {
     iconTitle: 'Learn photography with ease',
     iconUrl: '/photography-course.png',
     iconAlt: 'Photography stand up',
+    coursePeriod: '6 weeks',
+    grade: '4.5',
+    amountOfStudents: '1.5k',
+    price: '30.5$',
   },
   {
     iconTitle: 'Be a pro in data analysis',
     iconUrl: '/data-analyse.png',
     iconAlt: 'discussion',
+    coursePeriod: '6 weeks',
+    grade: '4.5',
+    amountOfStudents: '1.5k',
+    price: '30.5$',
   },
   {
     iconTitle: 'Ethical Hacking is not hard as you think',
     iconUrl: '/hacker-course.png',
     iconAlt: 'Hacker',
+    coursePeriod: '6 weeks',
+    grade: '4.5',
+    amountOfStudents: '1.5k',
+    price: '30.5$',
   },
 ];
 
@@ -46,7 +71,7 @@ export const MostPopularCourses: FC = () => {
           <Image
             src="/sort.svg"
             alt="Sort"
-            width={30}
+            width={30} 
             height={30}
           />
           <h1 className="text-lg whitespace-nowrap text-white">
@@ -56,57 +81,17 @@ export const MostPopularCourses: FC = () => {
       </div>
 
       <div className="flex flex-row flex-wrap justify-center gap-10 max-[450px]:gap-5">
-        {items.map((item) => (
-          <div
-            key={item.iconTitle}
-            className="flex max-w-1/3 flex-col overflow-hidden rounded-[5px] shadow-sm max-[1000px]:min-w-[180px] md:rounded-[10px]"
-          >
-            <Image
-              src={item.iconUrl}
-              alt={item.iconAlt}
-              width={391}
-              height={215}
-              className="mb-5"
-            />
-            <div className="mb-8 flex max-w-[379px] items-start px-6 max-[1000px]:mb-4 max-[500px]:pl-3">
-              <h1 className="line-clamp-2 text-xl font-medium max-[900px]:text-base">
-                {item.iconTitle}
-              </h1>
-              <div className="ml-auto flex gap-[6px]">
-                <Image
-                  src="/star-rating.svg"
-                  alt="rating star"
-                  height={18}
-                  width={18}
-                />{' '}
-                <h2>4.5</h2>
-              </div>
-            </div>
-            <div className="flex flex-row items-center px-6 max-[1000px]:flex-col-reverse max-[1000px]:items-start">
-              <div className="mb-5 flex flex-row items-center gap-3 whitespace-nowrap">
-                <p className="text-base font-medium max-[1000px]:font-normal max-[600px]:text-xs">
-                  6 weeks
-                </p>
-                <div className="flex flex-row items-center justify-center gap-3">
-                  <Image
-                    src="/group.svg"
-                    alt="group"
-                    width={16}
-                    height={16}
-                  />
-                  <div className="flex flex-row">
-                    <h1 className="text-base font-medium max-[1000px]:font-normal max-[600px]:text-xs">
-                      1.5k Students
-                    </h1>
-                  </div>
-                </div>
-              </div>
-
-              <h2 className="text-button ml-auto px-1 text-xl font-semibold max-[1000px]:mb-5 max-[1000px]:ml-0">
-                30.5$
-              </h2>
-            </div>
-          </div>
+        {items.map((item, index) => (
+          <CourseCard
+            key={index}
+            iconTitle={item.iconTitle}
+            iconAlt={item.iconAlt}
+            iconUrl={item.iconUrl}
+            grade={item.grade}
+            coursePeriod={item.coursePeriod}
+            amountOfStudents={item.amountOfStudents}
+            price={item.price}
+          />
         ))}
       </div>
     </div>
