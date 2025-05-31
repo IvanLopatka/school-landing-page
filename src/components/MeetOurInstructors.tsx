@@ -37,11 +37,11 @@ export const MeetOurInstructors: FC = () => {
           Meet our instructors
         </h1>
       </div>
-      <div className="flex max-w-screen flex-wrap justify-center gap-5">
+      <div className="flex flex-wrap justify-center gap-5">
         {instructors.map((instructor) => (
           <div
             key={instructor.name}
-            className="max-w-[40vw] flex-col justify-center rounded-[2.80px] text-center shadow-lg lg:max-w-1/3"
+            className="flex-col justify-center rounded-[2.80px] text-center shadow-lg sm:w-2/3 lg:w-1/3 lg:max-w-[380px]"
           >
             <div className="mb-5 flex justify-center">
               <Image
@@ -57,7 +57,7 @@ export const MeetOurInstructors: FC = () => {
             <h2 className="text-button mb-5 text-sm font-medium lg:text-base">
               {instructor.position}
             </h2>
-            <div className="mb-4 px-4">
+            <div className="mb-6 px-4">
               <h3 className="text-xs break-words lg:text-base">
                 {instructor.title}
               </h3>

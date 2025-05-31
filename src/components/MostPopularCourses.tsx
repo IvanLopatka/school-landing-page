@@ -71,7 +71,7 @@ export const MostPopularCourses: FC = () => {
           <Image
             src="/sort.svg"
             alt="Sort"
-            width={30} 
+            width={30}
             height={30}
           />
           <h1 className="text-lg whitespace-nowrap text-white">
@@ -80,7 +80,7 @@ export const MostPopularCourses: FC = () => {
         </button>
       </div>
 
-      <div className="flex flex-row flex-wrap justify-center gap-10 max-[450px]:gap-5">
+      <div className="flex flex-row flex-wrap justify-center gap-5">
         {items.map((item, index) => (
           <CourseCard
             key={index}

@@ -20,7 +20,7 @@ export const CourseCard: FC<CourseCardProps> = ({
 }) => (
   <div
     key={iconTitle}
-    className="flex max-w-1/3 flex-col overflow-hidden rounded-[5px] shadow-sm max-[1000px]:min-w-[180px] md:rounded-[10px]"
+    className="overflow-hidden rounded-[5px] shadow-sm md:rounded-[10px]"
   >
     <Image
       src={iconUrl}
