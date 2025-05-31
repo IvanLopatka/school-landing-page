@@ -110,7 +110,7 @@ export const MostPopularCourses: FC = () => {
 
       <div className="flex flex-row flex-wrap justify-center gap-10 max-[450px]:gap-5">
         {courses.map((item, index) => (
-          <div className="max-w-1/3" key={index}>
+          <div className="w-1/2 md:w-1/3" key={index}>
             <CourseCard
               iconTitle={item.iconTitle}
               iconAlt={item.iconAlt}
