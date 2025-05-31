@@ -1,66 +1,35 @@
+'use client';
+import { courses } from './MostPopularCourses';
 import Image from 'next/image';
 import React from 'react';
-import {
-  ScrollMenu,
-  VisibilityContext,
-} from 'react-horizontal-scrolling-menu';
-import 'react-horizontal-scrolling-menu/dist/styles.css';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
 import { FC } from 'react';
-
-const items = [
-  {
-    id: 1,
-    Title: "",
-    Url: '',
-    Alt: ""
-
-  },{
-    id: 2,
-    Title: "",
-    Url: '',
-    Alt: ""
-
-  },{
-    id: 3,
-    Title: "",
-    Url: '',
-    Alt: ""
-
-  },{
-    id: 4,
-    Title: "",
-    Url: '',
-    Alt: ""
-
+import { CourseCard } from './CourseCard';
+const responsive = {
+  lg: {
+    breakpoint: { max: 4000, min: 768 },
+    items: 3,
+    slidesToSlide: 3,
   },
-];
+  md: {
+    breakpoint: { max: 768, min: 641 },
+    items: 3,
+    slidesToSlide: 3,
+  },
+  sm: {
+    breakpoint: { max: 640, min: 0 },
+    items: 3,
+    slidesToSlide: 3,
+  },
+};
 
-const getItems = () =>
-  Array(20)
-    .fill(0)
-    .map((_, ind) => ({ id: `element-${ind}` }));
+const items = [];
 
 export const ScrollList: FC = () => {
-  const [setItems] = React.useState(getItems);
-  const [selected, setSelected] = React.useState([]);
-
-  const isItemSelected = (id) =>
-    !!selected.find((el) => el === id);
-
-  const handleClick =
-    (id) =>
-    ({ getItemById, scrollToItem }) => {
-      const itemSelected = isItemSelected(id);
-
-      setSelected((currentSelected) =>
-        itemSelected
-          ? currentSelected.filter((el) => el !== id)
-          : currentSelected.concat(id)
-      );
-    };
   return (
-    <div className="">
+    <div className="container mx-auto">
       <div className="w-90vw flex justify-center">
         <h1 className="Poppins text-3xl font-semibold">
           Choose favourite course from top cartegories
@@ -69,6 +38,30 @@ export const ScrollList: FC = () => {
           See all
         </h2>
       </div>
+      <Carousel
+        sliderClass="gap-5 "
+        swipeable={false}
+        draggable={false}
+        showDots={false}
+        responsive={responsive}
+      >
+        {courses.map((item, index) => (
+          <div
+            className="h-full rounded-xl py-5"
+            key={index}
+          >
+            <CourseCard
+              iconTitle={item.iconTitle}
+              iconAlt={item.iconAlt}
+              iconUrl={item.iconUrl}
+              grade={item.grade}
+              coursePeriod={item.coursePeriod}
+              amountOfStudents={item.amountOfStudents}
+              price={item.price}
+            />
+          </div>
+        ))}
+      </Carousel>
     </div>
   );
 };

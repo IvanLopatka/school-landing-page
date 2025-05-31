@@ -1,4 +1,4 @@
-import { NavigationBar } from '@/components';
+import { NavigationBar, ScrollList } from '@/components';
 import { FirstFrame } from '@/components';
 import { SecondFrame } from '@/components';
 import { MostPopularCourses } from '@/components';
@@ -11,6 +11,7 @@ export default function Home() {
         <NavigationBar />
         <FirstFrame />
         <SecondFrame />
+        <ScrollList />
         <MostPopularCourses />
         <MeetOurInstructors />
       </div>

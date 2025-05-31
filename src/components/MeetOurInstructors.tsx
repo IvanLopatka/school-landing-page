@@ -41,7 +41,7 @@ export const MeetOurInstructors: FC = () => {
         {instructors.map((instructor) => (
           <div
             key={instructor.name}
-            className="flex-col justify-center rounded-[2.80px] text-center shadow-lg sm:w-2/3 lg:w-1/3 lg:max-w-[380px]"
+            className="flex-col justify-center rounded-[2.80px] text-center shadow-lg sm:max-w-1/3"
           >
             <div className="mb-5 flex justify-center">
               <Image
@@ -57,8 +57,8 @@ export const MeetOurInstructors: FC = () => {
             <h2 className="text-button mb-5 text-sm font-medium lg:text-base">
               {instructor.position}
             </h2>
-            <div className="mb-6 px-4">
-              <h3 className="text-xs break-words lg:text-base">
+            <div className="mb-4 px-4">
+              <h3 className="text-xs text-wrap break-words lg:text-base">
                 {instructor.title}
               </h3>
             </div>

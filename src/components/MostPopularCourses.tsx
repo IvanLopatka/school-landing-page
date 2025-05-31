@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import { FC } from 'react';
 import { CourseCard } from './CourseCard';
-const items = [
+export const courses = [
   {
     iconTitle: 'Learn Marketing from Top Instructors.',
     iconUrl: '/instructors_marketing.png',
@@ -58,6 +58,34 @@ const items = [
     amountOfStudents: '1.5k',
     price: '30.5$',
   },
+  {
+    iconTitle: 'Learn Marketing from Top Instructor.',
+    iconUrl: '/instructors_marketing.png',
+    iconAlt: 'Learn marketing',
+    coursePeriod: '6 weeks',
+    grade: '4.5',
+    amountOfStudents: '1.5k',
+    price: '30.5$',
+  },
+  {
+    iconTitle:
+      'Front-end development is not hard as you thin',
+    iconUrl: '/man-hold-laptop.png',
+    iconAlt: 'Man with laptop',
+    coursePeriod: '6 weeks',
+    grade: '4.5',
+    amountOfStudents: '1.5k',
+    price: '30.5$',
+  },
+  {
+    iconTitle: 'Everything you need to know in U',
+    iconUrl: '/UX-course.png',
+    iconAlt: 'Technology',
+    coursePeriod: '6 weeks',
+    grade: '4.5',
+    amountOfStudents: '1.5k',
+    price: '30.5$',
+  },
 ];
 
 export const MostPopularCourses: FC = () => {
@@ -80,18 +108,19 @@ export const MostPopularCourses: FC = () => {
         </button>
       </div>
 
-      <div className="flex flex-row flex-wrap justify-center gap-5">
-        {items.map((item, index) => (
-          <CourseCard
-            key={index}
-            iconTitle={item.iconTitle}
-            iconAlt={item.iconAlt}
-            iconUrl={item.iconUrl}
-            grade={item.grade}
-            coursePeriod={item.coursePeriod}
-            amountOfStudents={item.amountOfStudents}
-            price={item.price}
-          />
+      <div className="flex flex-row flex-wrap justify-center gap-10 max-[450px]:gap-5">
+        {courses.map((item, index) => (
+          <div className="max-w-1/3" key={index}>
+            <CourseCard
+              iconTitle={item.iconTitle}
+              iconAlt={item.iconAlt}
+              iconUrl={item.iconUrl}
+              grade={item.grade}
+              coursePeriod={item.coursePeriod}
+              amountOfStudents={item.amountOfStudents}
+              price={item.price}
+            />
+          </div>
         ))}
       </div>
     </div>
