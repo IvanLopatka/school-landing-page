@@ -23,7 +23,7 @@ export const FirstFrame: React.FC = () => {
         </div>
 
         {/* Right content */}
-        <div className="relative mt-12 ml-auto scale-[0.8] justify-end lg:mt-0 lg:w-1/2 lg:scale-none">
+        <div className="relative mt-12 ml-auto scale-[0.8] justify-end overflow-visible lg:mt-0 lg:w-1/2 lg:scale-none">
           <div className="relative max-w-[405px] lg:max-w-full">
             <Image
               src="/i-m-prepared-exam.png"
@@ -52,7 +52,7 @@ export const FirstFrame: React.FC = () => {
             </div>
 
             {/* Floating stats card */}
-            <div className="absolute right-[-10%] bottom-[5%] max-w-[129px] rounded-[6.89px] bg-white p-4 text-center shadow-lg xl:right-[5%]">
+            <div className="absolute right-[-10%] bottom-[5%] max-w-[129px] rounded-[6.89px] bg-white p-4 text-center shadow-lg xl:right-[8%]">
               <Image
                 src="/FirstFrame-Icon.svg"
                 alt="Icon"
@@ -68,8 +68,8 @@ export const FirstFrame: React.FC = () => {
               </p>
             </div>
           </div>
+          <div className="bg-bg-palette absolute top-[-5%] right-[6%] -z-1 h-[110%] w-[110px] lg:rounded-r-[2rem]"></div>
         </div>
-        <div className="bg-bg-palette absolute z-10 max-h-full w-[107px]"></div>
       </div>
       <div className="absolute bottom-[-20%] left-[-20%] -z-10 h-[700px] w-[700px] rounded-full bg-radial from-[var(--gradient-color)] to-white opacity-10 blur-3xl" />
     </div>
