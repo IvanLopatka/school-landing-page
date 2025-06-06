@@ -22,7 +22,7 @@ export const CourseCard: FC<CourseCardProps> = ({
   return (
     <div
       key={iconTitle}
-      className="flex h-[380px] flex-col overflow-hidden rounded-[5px] shadow-sm md:rounded-[10px]"
+      className="container flex h-[380px] flex-col overflow-hidden rounded-[5px] shadow-sm md:rounded-[10px]"
     >
       <div className="relative h-3/5 w-full">
         <Image
@@ -35,10 +35,10 @@ export const CourseCard: FC<CourseCardProps> = ({
       <div className="flex h-2/5 flex-col justify-between px-2 py-4 sm:px-4">
         <div className="flex flex-col items-start">
           <div className="flex w-full flex-row justify-between">
-            <h5 className="line-clamp-2 text-xl font-medium max-[900px]:text-base">
+            <h5 className="line-clamp-3 text-xl font-medium max-[900px]:text-base">
               {iconTitle}
             </h5>
-            <div className="float-right flex flex-row flex-nowrap items-start gap-[6px] sm:float-none">
+            <div className="float-right flex flex-row flex-nowrap items-start gap-[6px] pr-3 sm:pr-0">
               <Image
                 src="/star-rating.svg"
                 alt="rating star"
@@ -49,7 +49,7 @@ export const CourseCard: FC<CourseCardProps> = ({
               <span>{grade}</span>
             </div>
           </div>
-          <span className="text-button flex text-xl font-semibold sm:hidden">
+          <span className="text-button flex text-xl font-semibold lg:hidden">
             {price}
           </span>
         </div>
@@ -70,7 +70,7 @@ export const CourseCard: FC<CourseCardProps> = ({
               </span>
             </div>
           </div>
-          <span className="text-button hidden text-xl font-semibold sm:flex">
+          <span className="text-button hidden text-xl font-semibold lg:flex">
             {price}
           </span>
         </div>
