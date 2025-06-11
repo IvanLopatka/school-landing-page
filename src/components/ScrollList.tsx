@@ -1,5 +1,6 @@
 'use client';
 import { courses } from './MostPopularCourses';
+import { CustomCarouselArrow } from './CustomCarouselArrow';
 
 import React from 'react';
 import Carousel from 'react-multi-carousel';
@@ -28,19 +29,27 @@ const responsive = {
 export const ScrollList: FC = () => {
   return (
     <div className="container mx-auto">
-      <div className="flex w-[90vw] justify-start">
+      <div className="flex justify-start">
         <h1 className="Poppins text-3xl font-semibold">
           Learn A New Skill In Two Hours
         </h1>
       </div>
       <Carousel
-        itemClass="px-2 "
+        itemClass="px-2"
+        arrows
+        infinite
         className="mx-auto max-w-screen"
         responsive={responsive}
         autoPlay={false}
         keyBoardControl={true}
         transitionDuration={50}
         partialVisible={false}
+        customRightArrow={
+          <CustomCarouselArrow direction="right" />
+        }
+        customLeftArrow={
+          <CustomCarouselArrow direction="left" />
+        }
       >
         {courses.map((item, index) => (
           <div

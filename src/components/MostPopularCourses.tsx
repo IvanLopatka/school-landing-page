@@ -50,7 +50,7 @@ export const courses = [
     price: '30.5$',
   },
   {
-    iconTitle: 'Ethical Hacking is not hard as you think',
+    iconTitle: 'Ethical Hacking is not hard as you think.',
     iconUrl: '/hacker-course.png',
     iconAlt: 'Hacker',
     coursePeriod: '6 weeks',
@@ -59,7 +59,7 @@ export const courses = [
     price: '30.5$',
   },
   {
-    iconTitle: 'Learn Marketing from Top Instructor.',
+    iconTitle: 'Learn Marketing from Top Instructors',
     iconUrl: '/instructors_marketing.png',
     iconAlt: 'Learn marketing',
     coursePeriod: '6 weeks',
@@ -69,7 +69,7 @@ export const courses = [
   },
   {
     iconTitle:
-      'Front-end development is not hard as you thin',
+      'Front-end development is not hard as you think',
     iconUrl: '/man-hold-laptop.png',
     iconAlt: 'Man with laptop',
     coursePeriod: '6 weeks',
@@ -78,7 +78,7 @@ export const courses = [
     price: '30.5$',
   },
   {
-    iconTitle: 'Everything you need to know in U',
+    iconTitle: 'Everything you need to know in UX',
     iconUrl: '/UX-course.png',
     iconAlt: 'Technology',
     coursePeriod: '6 weeks',
@@ -90,7 +90,7 @@ export const courses = [
 
 export const MostPopularCourses: FC = () => {
   return (
-    <div className="container mx-auto mt-5 justify-center">
+    <div className="container mx-auto mt-5 mb-20 justify-center">
       <div className="mb-15 flex w-full justify-between">
         <h1 className="Poppins text-3xl font-semibold max-[1000px]:text-2xl">
           Most Popular courses
@@ -108,17 +108,17 @@ export const MostPopularCourses: FC = () => {
         </button>
       </div>
 
-      <div className="flex flex-row flex-wrap justify-center gap-10 max-[450px]:gap-5">
-        {courses.map((item, index) => (
-          <div className="w-1/2 md:w-1/3" key={index}>
+      <div className="relative flex flex-row flex-wrap justify-center gap-10">
+        {courses.map((course, index) => (
+          <div className="w-1/2 md:w-[30%]" key={index}>
             <CourseCard
-              iconTitle={item.iconTitle}
-              iconAlt={item.iconAlt}
-              iconUrl={item.iconUrl}
-              grade={item.grade}
-              coursePeriod={item.coursePeriod}
-              amountOfStudents={item.amountOfStudents}
-              price={item.price}
+              iconTitle={course.iconTitle}
+              iconAlt={course.iconAlt}
+              iconUrl={course.iconUrl}
+              grade={course.grade}
+              coursePeriod={course.coursePeriod}
+              amountOfStudents={course.amountOfStudents}
+              price={course.price}
             />
           </div>
         ))}
