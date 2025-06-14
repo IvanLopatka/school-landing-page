@@ -58,34 +58,6 @@ export const courses = [
     amountOfStudents: '1.5k',
     price: '30.5$',
   },
-  {
-    iconTitle: 'Learn Marketing from Top Instructors',
-    iconUrl: '/instructors_marketing.png',
-    iconAlt: 'Learn marketing',
-    coursePeriod: '6 weeks',
-    grade: '4.5',
-    amountOfStudents: '1.5k',
-    price: '30.5$',
-  },
-  {
-    iconTitle:
-      'Front-end development is not hard as you think',
-    iconUrl: '/man-hold-laptop.png',
-    iconAlt: 'Man with laptop',
-    coursePeriod: '6 weeks',
-    grade: '4.5',
-    amountOfStudents: '1.5k',
-    price: '30.5$',
-  },
-  {
-    iconTitle: 'Everything you need to know in UX',
-    iconUrl: '/UX-course.png',
-    iconAlt: 'Technology',
-    coursePeriod: '6 weeks',
-    grade: '4.5',
-    amountOfStudents: '1.5k',
-    price: '30.5$',
-  },
 ];
 
 export const MostPopularCourses: FC = () => {

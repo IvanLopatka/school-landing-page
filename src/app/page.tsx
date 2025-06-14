@@ -4,6 +4,7 @@ import { SecondFrame } from '@/components';
 import { MostPopularCourses } from '@/components';
 import { MeetOurInstructors } from '@/components';
 import { ChooseCategory } from '@/components/ChooseCategory';
+import { GoodEducation } from '@/components/GoodEducation';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <ChooseCategory />
         <MostPopularCourses />
         <ScrollList />
+        <GoodEducation />
         <MeetOurInstructors />
       </div>
     </div>
