@@ -49,8 +49,8 @@ export const GoodEducation: FC = () => {
               className="mx-auto mb-2"
             />
             <div className="flex flex-col justify-center">
-              <div className="flex-col justify-center">
-                <p className="text-[24px] font-bold text-green-600">
+              <div className="flex flex-col items-center">
+                <p className="text-[24px] leading-none font-bold text-green-600">
                   Job
                 </p>
                 <Image
@@ -58,7 +58,6 @@ export const GoodEducation: FC = () => {
                   alt="underline"
                   width={34}
                   height={2}
-                  className=""
                 />
               </div>
 
