@@ -3,7 +3,7 @@ import { FC } from 'react';
 import Image from 'next/image';
 import { twMerge } from 'tailwind-merge';
 interface CustomCarouselArrowProps {
-  onClick: () => void;
+  onClick?: () => void;
   direction: 'left' | 'right';
 }
 
