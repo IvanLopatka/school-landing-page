@@ -5,18 +5,19 @@ import { twMerge } from 'tailwind-merge';
 interface CustomCarouselArrowProps {
   onClick?: () => void;
   direction: 'left' | 'right';
+  className?: string;
 }
 
 export const CustomCarouselArrow: FC<
   CustomCarouselArrowProps
-> = (props) => {
-  console.log('props', props);
+> = ({ onClick, direction, className }) => {
   return (
     <button
-      onClick={props.onClick}
+      onClick={onClick}
       className={twMerge(
         'absolute z-30 flex h-15 w-15 justify-center rounded-full bg-white active:bg-gray-200',
-        props.direction === 'left' ? 'left-6' : 'right-6'
+        direction === 'left' ? 'left-6' : 'right-6',
+        className
       )}
     >
       <Image
@@ -25,9 +26,7 @@ export const CustomCarouselArrow: FC<
         height={30}
         width={30}
         className={
-          props.direction === 'left'
-            ? 'rotate-180'
-            : undefined
+          direction === 'left' ? 'rotate-180' : undefined
         }
       />
     </button>

@@ -1,5 +1,5 @@
 'use client';
-import Image from 'next/image';
+
 import React from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
@@ -67,20 +67,22 @@ export const Reviews: FC = () => {
             Say About Us
           </h3>
         </div>
-        <Carousel
-          itemClass="px-3"
-          arrows={false}
-          infinite
-          className="mx-auto"
-          responsive={responsive}
-          autoPlay={false}
-          sliderClass="h-[50%]"
-          keyBoardControl={true}
-          transitionDuration={50}
-          partialVisible={true}
-          customButtonGroup={<ArrowsGroup />}
-        >
-          <div className="relative flex">
+        <div className="relative w-full bg-amber-400">
+          <Carousel
+            itemClass="px-3"
+            arrows={false}
+            infinite
+            containerClass="absolute top-0 right-0 bottom-0 flex h-40 w-full flex-1 bg-green-400"
+            className="absolute right-0 mx-auto"
+            responsive={responsive}
+            autoPlay={false}
+            sliderClass="h-[50%]"
+            keyBoardControl={true}
+            renderButtonGroupOutside
+            transitionDuration={50}
+            partialVisible={true}
+            customButtonGroup={<ArrowsGroup />}
+          >
             {items.map((item) => (
               <div key={item.iconTitle}>
                 <ReviewsCards
@@ -90,8 +92,8 @@ export const Reviews: FC = () => {
                 />
               </div>
             ))}
-          </div>
-        </Carousel>
+          </Carousel>
+        </div>
       </div>
     </div>
   );
