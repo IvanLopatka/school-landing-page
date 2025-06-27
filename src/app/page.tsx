@@ -5,6 +5,8 @@ import { MostPopularCourses } from '@/components';
 import { MeetOurInstructors } from '@/components';
 import { ChooseCategory } from '@/components/ChooseCategory';
 import { GoodEducation } from '@/components/GoodEducation';
+import { Reviews } from '@/components/Review';
+import { ReviewsCards } from '@/components/ReviewsCards';
 
 export default function Home() {
   return (
@@ -17,6 +19,8 @@ export default function Home() {
         <MostPopularCourses />
         <ScrollList />
         <GoodEducation />
+        <Reviews />
+
         <MeetOurInstructors />
       </div>
     </div>

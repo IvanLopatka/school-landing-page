@@ -32,7 +32,7 @@ export const GoodEducation: FC = () => {
       <h4 className="Poppins mb-5 text-3xl font-semibold text-wrap lg:mb-10">
         We Bring The Good Education To Life
       </h4>
-      <div className="flex flex-col justify-start gap-x-10 lg:flex-row">
+      <div className="flex flex-col justify-center gap-x-10 lg:flex-row lg:justify-start">
         <div className="relative mb-10 flex max-w-[380px] scale-[0.9] flex-col lg:my-0 lg:scale-none">
           <Image
             src="/job-opportunities.png"
@@ -50,9 +50,9 @@ export const GoodEducation: FC = () => {
             />
             <div className="flex flex-col justify-center">
               <div className="flex-col justify-center">
-                <span className="text-[24px] font-bold text-green-600">
+                <p className="text-[24px] font-bold text-green-600">
                   Job
-                </span>
+                </p>
                 <Image
                   src="underline.svg"
                   alt="underline"
@@ -69,7 +69,7 @@ export const GoodEducation: FC = () => {
           </div>
         </div>
         <div className="flex flex-col">
-          <h4 className="Poppins text-xl font-semibold text-wrap sm:text-2xl md:text-5xl md:leading-15">
+          <h4 className="Poppins ml-5 text-xl font-semibold text-wrap sm:text-2xl md:text-5xl md:leading-15">
             Let Your Education Do <br></br> The Walking
           </h4>
           {items.map((item) => (
