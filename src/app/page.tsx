@@ -6,7 +6,7 @@ import { MeetOurInstructors } from '@/components';
 import { ChooseCategory } from '@/components/ChooseCategory';
 import { GoodEducation } from '@/components/GoodEducation';
 import { Reviews } from '@/components/Review';
-import { ReviewsCards } from '@/components/ReviewsCards';
+import { CallUs } from '@/components/CallUs';
 
 export default function Home() {
   return (
@@ -20,8 +20,8 @@ export default function Home() {
         <ScrollList />
         <GoodEducation />
         <Reviews />
-
         <MeetOurInstructors />
+        <CallUs />
       </div>
     </div>
   );

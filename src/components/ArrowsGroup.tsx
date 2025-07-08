@@ -12,7 +12,7 @@ export const ArrowsGroup: FC<Props> = ({
   previous,
 }) => {
   return (
-    <div className="relative left-0 flex h-[60px] w-[168px] max-w-[168px] justify-between bg-red-400">
+    <div className="relative bottom-110 left-[70%] z-10 flex h-[60px] w-[168px] max-w-[168px] justify-between sm:left-[50%] lg:bottom-70 lg:left-0">
       <CustomCarouselArrow
         onClick={previous}
         direction="left"

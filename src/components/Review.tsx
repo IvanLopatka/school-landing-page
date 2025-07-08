@@ -11,12 +11,12 @@ import { ArrowsGroup } from './ArrowsGroup';
 const responsive = {
   lg: {
     breakpoint: { max: 4000, min: 769 },
-    items: 4,
+    items: 1.5,
     slidesToSlide: 1,
   },
   md: {
     breakpoint: { max: 768, min: 640 },
-    items: 3,
+    items: 2,
     slidesToSlide: 1,
   },
   sm: {
@@ -27,24 +27,36 @@ const responsive = {
 };
 const items = [
   {
-    iconTitle: 'Marketing',
+    title:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
     iconUrl: '/marketing.png',
-    iconAlt: 'Learn marketing',
+    iconAlt: 'marketing',
+    position: 'Senior Developer',
+    name: 'Moah Jumah',
   },
   {
-    iconTitle: 'Design',
+    title:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
     iconUrl: '/design.png',
     iconAlt: 'laptop',
+    position: 'Senior Developer',
+    name: 'Moah Jumah',
   },
   {
-    iconTitle: 'Programming',
+    title:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
     iconUrl: '/programming.png',
     iconAlt: 'programming',
+    position: 'Senior Developer',
+    name: 'Moah Jumah',
   },
   {
-    iconTitle: 'Technology',
+    title:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
     iconUrl: '/technology.png',
     iconAlt: 'Technology',
+    position: 'Senior Developer',
+    name: 'Moah Jumah',
   },
 ];
 
@@ -58,8 +70,8 @@ export const Reviews: FC = () => {
       </div>
 
       <div>
-        <div className="flex flex-col">
-          <h3 className="OpenSans text-5xl font-semibold">
+        <div className="mb-5 flex flex-col">
+          <h3 className="OpenSans text-3xl font-semibold md:text-5xl">
             What Our
             <p className="font-bold text-green-600">
               Students
@@ -67,13 +79,13 @@ export const Reviews: FC = () => {
             Say About Us
           </h3>
         </div>
-        <div className="relative w-full bg-amber-400">
+        <div className="relative w-full">
           <Carousel
-            itemClass="px-3"
+            itemClass="px-1 md:px-3"
             arrows={false}
-            infinite
-            containerClass="absolute top-0 right-0 bottom-0 flex h-40 w-full flex-1 bg-green-400"
-            className="absolute right-0 mx-auto"
+            infinite={false}
+            containerClass="absolute left-0 lg:left-40 top-[-10] lg:top-[-140] flex max-[1024px]:w-[90vw] h-full w-2/3 flex-1"
+            className="absolute right-0 mx-auto max-w-screen"
             responsive={responsive}
             autoPlay={false}
             sliderClass="h-[50%]"
@@ -84,11 +96,13 @@ export const Reviews: FC = () => {
             customButtonGroup={<ArrowsGroup />}
           >
             {items.map((item) => (
-              <div key={item.iconTitle}>
+              <div key={item.title}>
                 <ReviewsCards
                   iconAlt={item.iconAlt}
                   iconUrl={item.iconUrl}
-                  iconTitle={item.iconTitle}
+                  title={item.title}
+                  position={item.position}
+                  name={item.name}
                 />
               </div>
             ))}
