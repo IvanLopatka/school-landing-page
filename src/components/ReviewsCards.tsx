@@ -34,7 +34,7 @@ export const ReviewsCards: FC<ReviewsCardsProps> = ({
           <span className="text-sm font-bold md:text-base">
             {name}
           </span>
-          <span className="text-button text-sm font-semibold md:text-base">
+          <span className="text-button text-sm font-semibold text-nowrap md:text-base">
             {position}
           </span>
         </div>
