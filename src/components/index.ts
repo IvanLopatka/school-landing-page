@@ -4,3 +4,5 @@ export * from './SecondFrame';
 export * from './ScrollList';
 export * from './MostPopularCourses';
 export * from './MeetOurInstructors'
+export * from './CallUs'
+export * from './InfoAndContacts'

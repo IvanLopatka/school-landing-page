@@ -7,6 +7,7 @@ import { ChooseCategory } from '@/components/ChooseCategory';
 import { GoodEducation } from '@/components/GoodEducation';
 import { Reviews } from '@/components/Review';
 import { CallUs } from '@/components/CallUs';
+import { InfoAndContacts } from '@/components';
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <Reviews />
         <MeetOurInstructors />
         <CallUs />
+        <InfoAndContacts />
       </div>
     </div>
   );
