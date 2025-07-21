@@ -30,7 +30,7 @@ export const ScrollList: FC = () => {
   return (
     <div className="container mx-auto">
       <div className="flex justify-start">
-        <h1 className="Poppins text-3xl font-semibold">
+        <h1 className="Poppins px-4 text-3xl font-semibold">
           Learn A New Skill In Two Hours
         </h1>
       </div>

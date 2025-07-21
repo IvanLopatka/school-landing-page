@@ -16,7 +16,7 @@ const items = [
   {
     title:
       'Collaborate with different learners around the globe',
-    iconUrl: '/collaboration.svg',
+    iconUrl: '/bag.svg',
     iconAlt: 'bag',
   },
   {
@@ -29,7 +29,7 @@ const items = [
 export const GoodEducation: FC = () => {
   return (
     <div className="container mx-auto flex flex-col">
-      <h4 className="Poppins mb-5 text-3xl font-semibold text-wrap lg:mb-10">
+      <h4 className="Poppins mb-5 px-4 text-3xl font-semibold text-wrap lg:mb-10">
         We Bring The Good Education To Life
       </h4>
       <div className="flex flex-col justify-center gap-x-10 lg:flex-row lg:justify-start">

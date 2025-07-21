@@ -33,7 +33,7 @@ export const MeetOurInstructors: FC = () => {
   return (
     <div className="container mx-auto mt-5 mb-20 justify-center">
       <div className="mb-15 flex w-full">
-        <h1 className="Poppins text-3xl font-semibold max-[1000px]:text-2xl">
+        <h1 className="Poppins px-4 text-3xl font-semibold max-[1000px]:text-2xl">
           Meet our instructors
         </h1>
       </div>
