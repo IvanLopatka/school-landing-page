@@ -40,7 +40,7 @@ export const GoodEducation: FC = () => {
             width={340}
             height={403}
           />
-          <div className="absolute right-[-10%] bottom-[20%] flex max-w-[129px] flex-col justify-center rounded-[6.89px] bg-white p-4 text-center shadow-lg xl:right-[8%]">
+          <div className="absolute right-1 bottom-[20%] flex max-w-[129px] flex-col justify-center rounded-[6.89px] bg-white p-4 text-center shadow-lg xl:right-[8%]">
             <Image
               src="/bag.svg"
               alt="bag"
@@ -82,7 +82,7 @@ export const GoodEducation: FC = () => {
                 width={40}
                 height={40}
               />
-              <span className="text-sm font-medium">
+              <span className="text-sm font-medium text-wrap">
                 {item.title}
               </span>
             </div>

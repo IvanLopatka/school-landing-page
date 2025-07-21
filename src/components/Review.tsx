@@ -84,8 +84,7 @@ export const Reviews: FC = () => {
             itemClass="px-1 md:px-3"
             arrows={false}
             infinite={false}
-            containerClass="absolute left-0 lg:left-40 top-[-10] lg:top-[-140] flex max-[1024px]:w-[90vw] h-full w-2/3 flex-1"
-            className="absolute right-0 mx-auto max-w-screen"
+            containerClass="relative lg:top-[-160px] top-[-10] lg:left-1/3 flex max-[1024px]:w-[100vw] h-full w-2/3 flex-1"
             responsive={responsive}
             autoPlay={false}
             sliderClass="h-[50%]"
