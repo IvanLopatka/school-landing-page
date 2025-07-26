@@ -21,6 +21,7 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from '@/components/ui/drawer';
+import { AccountUI } from './AccountUI';
 
 export const NavigationBar: FC = () => {
   return (
@@ -40,22 +41,31 @@ export const NavigationBar: FC = () => {
           <DrawerContent>
             <MenuUI />
           </DrawerContent>
-
-          <Image
-            src="/WiSchool.svg"
-            alt="Next.js logo"
-            width={132}
-            height={31}
-          />
-          <button className="ml-auto shrink-0 sm:hidden">
-            <Image
-              src="/carbon_user-avatar.svg"
-              alt="cart-icon"
-              width={32}
-              height={32}
-            />
-          </button>
         </Drawer>
+        <Image
+          src="/WiSchool.svg"
+          alt="Next.js logo"
+          width={132}
+          height={31}
+        />
+        <Popover>
+          <PopoverTrigger asChild>
+            <Button
+              variant="outline"
+              className="ml-auto shrink-0 border-none bg-transparent sm:hidden"
+            >
+              <Image
+                src="/carbon_user-avatar.svg"
+                alt="cart-icon"
+                width={32}
+                height={32}
+              />
+            </Button>
+          </PopoverTrigger>
+          <PopoverContent>
+            <AccountUI />
+          </PopoverContent>
+        </Popover>
       </div>
 
       <div className="hidden gap-x-3 sm:flex md:gap-x-8">
@@ -85,6 +95,7 @@ export const NavigationBar: FC = () => {
             height={24}
           />
         </button>
+
         <div className="hidden gap-[10px] lg:flex">
           <button className="text-button">Login</button>
           <button className="bg-button rounded-[5px] px-[16px] py-[8px] text-base text-[16px] text-white">
