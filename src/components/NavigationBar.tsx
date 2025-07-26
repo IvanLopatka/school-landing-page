@@ -5,6 +5,11 @@ import { FC } from 'react';
 import React from 'react';
 import { MenuUI } from './MenuUI';
 import { Button } from '@/components/ui/button';
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from '@/components/ui/popover';
 
 import {
   Drawer,
@@ -23,14 +28,14 @@ export const NavigationBar: FC = () => {
       <div className="flex w-full items-center justify-between gap-x-6 sm:w-auto sm:gap-x-24">
         <Drawer direction="left">
           <DrawerTrigger>
-            <button className="sm:hidden">
+            <Button className="bg-transparent sm:hidden">
               <Image
                 src="/Vector.svg"
                 alt="menu-hamburger"
                 width={21}
                 height={16}
               />
-            </button>
+            </Button>
           </DrawerTrigger>
           <DrawerContent>
             <MenuUI />
