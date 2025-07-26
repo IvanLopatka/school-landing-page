@@ -48,31 +48,31 @@ export const InfoAndContacts: FC = () => {
               <div className="flex flex-col items-start gap-y-3">
                 <Link
                   href="#"
-                  className="text-sm text-nowrap text-white"
+                  className="text-nowrap text-white"
                 >
                   Home
                 </Link>
                 <Link
                   href="#"
-                  className="text-sm text-nowrap text-white"
+                  className="text-nowrap text-white"
                 >
                   Service
                 </Link>
                 <Link
                   href="#"
-                  className="text-sm text-nowrap text-white"
+                  className="text-nowrap text-white"
                 >
                   Training
                 </Link>
                 <Link
                   href="#"
-                  className="text-sm text-nowrap text-white"
+                  className="text-nowrap text-white"
                 >
-                  Resources
+                  Resoursec
                 </Link>
                 <Link
                   href="#"
-                  className="text-sm text-nowrap text-white"
+                  className="text-nowrap text-white"
                 >
                   About Us
                 </Link>
@@ -80,25 +80,25 @@ export const InfoAndContacts: FC = () => {
               <div className="flex flex-col items-start gap-y-3">
                 <Link
                   href="#"
-                  className="text-sm text-nowrap text-white"
+                  className="text-nowrap text-white"
                 >
                   SME
                 </Link>
                 <Link
                   href="#"
-                  className="text-sm text-nowrap text-white"
+                  className="text-nowrap text-white"
                 >
                   Solution
                 </Link>
                 <Link
                   href="#"
-                  className="text-sm text-nowrap text-white"
+                  className="text-nowrap text-white"
                 >
                   Reviews
                 </Link>
                 <Link
                   href="#"
-                  className="text-sm text-nowrap text-white"
+                  className="text-nowrap text-white"
                 >
                   Blog
                 </Link>
@@ -106,25 +106,25 @@ export const InfoAndContacts: FC = () => {
               <div className="flex flex-col items-start gap-y-3">
                 <Link
                   href="#"
-                  className="text-sm text-nowrap text-white"
+                  className="text-nowrap text-white"
                 >
                   Contact Us
                 </Link>
                 <Link
                   href="#"
-                  className="text-sm text-nowrap text-white"
+                  className="text-nowrap text-white"
                 >
                   Place A Call
                 </Link>
                 <Link
                   href="#"
-                  className="text-sm text-nowrap text-white"
+                  className="text-nowrap text-white"
                 >
                   Email
                 </Link>
                 <Link
                   href="#"
-                  className="text-sm text-nowrap text-white"
+                  className="text-nowrap text-white"
                 >
                   Wischool@gmail.com
                 </Link>
@@ -132,19 +132,19 @@ export const InfoAndContacts: FC = () => {
               <div className="hidden flex-col items-start gap-y-3 lg:flex">
                 <Link
                   href="#"
-                  className="text-sm text-nowrap text-white"
+                  className="text-nowrap text-white"
                 >
                   Job Opening
                 </Link>
                 <Link
                   href="#"
-                  className="text-sm text-nowrap text-white"
+                  className="text-nowrap text-white"
                 >
                   News
                 </Link>
                 <Link
                   href="#"
-                  className="text-sm text-nowrap text-white"
+                  className="text-nowrap text-white"
                 >
                   Research
                 </Link>
@@ -152,13 +152,13 @@ export const InfoAndContacts: FC = () => {
               <div className="hidden flex-col items-start gap-y-3 lg:flex">
                 <Link
                   href="#"
-                  className="text-sm text-nowrap text-white"
+                  className="text-nowrap text-white"
                 >
                   Uk Privacy Policy
                 </Link>
                 <Link
                   href="#"
-                  className="text-sm text-nowrap text-white"
+                  className="text-nowrap text-white"
                 >
                   Terms of Use
                 </Link>
@@ -170,7 +170,7 @@ export const InfoAndContacts: FC = () => {
           <h5 className="text-base font-semibold text-white lg:text-2xl">
             Subscribe to get latest updates
           </h5>
-          <div className="mb-2 flex h-[52px] md:scale-none lg:w-[542px]">
+          <div className="mb-2 flex h-[52px] w-[90vw] md:scale-none lg:w-[542px]">
             <input
               className="placeholder:text-button h-full w-full bg-white px-4"
               placeholder="Enter Your Email"
