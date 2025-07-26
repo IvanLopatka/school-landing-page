@@ -10,9 +10,13 @@
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.14",
+    "@radix-ui/react-popover": "^1.1.14",
+    "@radix-ui/react-slot": "^1.2.3",
     "@shadcn/ui": "^0.0.4",
     "button": "^1.1.1",
+    "class-variance-authority": "^0.7.1",
     "next": "15.2.2",
+    "popover": "^2.4.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-multi-carousel": "^2.8.6",
@@ -37,5 +41,9 @@
     "tailwindcss": "^4.0.17",
     "typescript": "^5"
   },
-  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e",
+  "main": "index.js",
+  "repository": "git@github.com:IvanLopatka/school-landing-page.git",
+  "author": "Lopatka Ivan <lopatkaivan630@gmail.com>",
+  "license": "MIT"
 }
