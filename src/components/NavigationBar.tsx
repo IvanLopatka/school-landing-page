@@ -62,7 +62,7 @@ export const NavigationBar: FC = () => {
               />
             </Button>
           </PopoverTrigger>
-          <PopoverContent>
+          <PopoverContent className="w-[200px]">
             <AccountUI />
           </PopoverContent>
         </Popover>

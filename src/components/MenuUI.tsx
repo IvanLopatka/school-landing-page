@@ -6,51 +6,49 @@ import { DrawerDescription } from '@/components/ui/drawer';
 
 export const MenuUI: FC = () => {
   return (
-    <div className="flex h-full w-full grow flex-col rounded-[16px] bg-zinc-50 p-5">
-      <div className="mx-auto max-w-md">
-        <DrawerDescription className="mb-2 text-zinc-600">
-          <div className="flex flex-col">
-            <Link
-              className="text-button text-2xl text-nowrap"
-              href="#"
-            >
-              Home
-            </Link>
-            <Link
-              className="text-button text-2xl text-nowrap"
-              href="#"
-            >
-              Courses
-            </Link>
-            <Link
-              className="text-button text-2xl text-nowrap"
-              href="#"
-            >
-              Instructors
-            </Link>
-            <Link
-              className="text-button text-2xl text-nowrap"
-              href="#"
-            >
-              Schedules
-            </Link>
-            <Link
-              className="text-button text-2xl text-nowrap"
-              href="#"
-            >
-              Contact Us
-            </Link>
-            <button className="hidden sm:block">
-              <Image
-                src="/bx_search.svg"
-                alt="Search"
-                width={24}
-                height={24}
-              />
-            </button>
-          </div>
-        </DrawerDescription>
-      </div>
+    <div className="flex h-full w-full flex-1 grow flex-col items-start justify-start rounded-[16px] p-5">
+      <DrawerDescription className="mb-2">
+        <div className="flex flex-col gap-5">
+          <Link
+            className="text-button text-2xl text-nowrap"
+            href="#"
+          >
+            Home
+          </Link>
+          <Link
+            className="text-button text-2xl text-nowrap"
+            href="#"
+          >
+            Courses
+          </Link>
+          <Link
+            className="text-button text-2xl text-nowrap"
+            href="#"
+          >
+            Instructors
+          </Link>
+          <Link
+            className="text-button text-2xl text-nowrap"
+            href="#"
+          >
+            Schedules
+          </Link>
+          <Link
+            className="text-button text-2xl text-nowrap"
+            href="#"
+          >
+            Contact Us
+          </Link>
+          <button className="hidden sm:block">
+            <Image
+              src="/bx_search.svg"
+              alt="Search"
+              width={24}
+              height={24}
+            />
+          </button>
+        </div>
+      </DrawerDescription>
     </div>
   );
 };
