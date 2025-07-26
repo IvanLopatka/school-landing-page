@@ -68,7 +68,7 @@ export const InfoAndContacts: FC = () => {
                   href="#"
                   className="text-nowrap text-white"
                 >
-                  Resoursec
+                  Resources
                 </Link>
                 <Link
                   href="#"
