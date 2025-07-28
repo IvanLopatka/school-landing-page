@@ -39,7 +39,7 @@ export const MenuUI: FC = () => {
           >
             Contact Us
           </Link>
-          <button className="hidden sm:block">
+          <button>
             <Image
               src="/bx_search.svg"
               alt="Search"
