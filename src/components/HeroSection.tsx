@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-export const FirstFrame: React.FC = () => {
+export const HeroSection: React.FC = () => {
   return (
     <div className="relative container mx-auto mt-20 mb-20 w-full overflow-hidden rounded-[50px] p-6">
       <div className="relative mx-auto flex max-w-7xl flex-col justify-between gap-4 lg:flex-row">
@@ -54,7 +54,7 @@ export const FirstFrame: React.FC = () => {
             {/* Floating stats card */}
             <div className="absolute right-[-10%] bottom-[5%] max-w-[129px] rounded-[6.89px] bg-white p-4 text-center shadow-lg xl:right-[8%]">
               <Image
-                src="/FirstFrame-Icon.svg"
+                src="/HeroSection-Icon.svg"
                 alt="Icon"
                 width={30}
                 height={30}

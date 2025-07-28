@@ -1,7 +1,7 @@
 import React from 'react';
 import { FC } from 'react';
 
-export const AccountUI: FC = () => {
+export const AuthButtons: FC = () => {
   return (
     <div className="flex w-full flex-col gap-5">
       <button className="text-button">Login</button>

@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { DrawerDescription } from '@/components/ui/drawer';
 
-export const MenuUI: FC = () => {
+export const DrawerMenu: FC = () => {
   return (
     <div className="flex h-full w-full flex-1 grow flex-col items-start justify-start rounded-[16px] p-5">
       <DrawerDescription className="mb-2">
@@ -39,7 +39,7 @@ export const MenuUI: FC = () => {
           >
             Contact Us
           </Link>
-          <button>
+          <button className="mt-4 sm:block">
             <Image
               src="/bx_search.svg"
               alt="Search"
