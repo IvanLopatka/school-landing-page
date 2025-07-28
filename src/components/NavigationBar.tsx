@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { FC } from 'react';
 import React from 'react';
-import { MenuUI } from './MenuUI';
+import { DrawerMenu } from './DrawerMenu';
 import { Button } from '@/components/ui/button';
 import {
   Popover,
@@ -16,7 +16,7 @@ import {
   DrawerContent,
   DrawerTrigger,
 } from '@/components/ui/drawer';
-import { AccountUI } from './AccountUI';
+import { AuthButtons } from './AuthButtons';
 
 export const NavigationBar: FC = () => {
   return (
@@ -24,7 +24,7 @@ export const NavigationBar: FC = () => {
       <div className="flex w-full items-center justify-between gap-x-6 sm:w-auto sm:gap-x-24">
         <Drawer direction="left">
           <DrawerTrigger asChild>
-            <Button className="bg-transparent sm:hidden">
+            <Button className="bg-white !shadow-none sm:hidden">
               <Image
                 src="/Vector.svg"
                 alt="menu-hamburger"
@@ -34,7 +34,7 @@ export const NavigationBar: FC = () => {
             </Button>
           </DrawerTrigger>
           <DrawerContent>
-            <MenuUI />
+            <DrawerMenu />
           </DrawerContent>
         </Drawer>
         <Image
@@ -45,10 +45,7 @@ export const NavigationBar: FC = () => {
         />
         <Popover>
           <PopoverTrigger asChild>
-            <Button
-              variant="outline"
-              className="ml-auto shrink-0 border-none bg-transparent sm:hidden"
-            >
+            <Button className="ml-auto shrink-0 border-none bg-white !shadow-none sm:hidden">
               <Image
                 src="/carbon_user-avatar.svg"
                 alt="cart-icon"
@@ -58,7 +55,7 @@ export const NavigationBar: FC = () => {
             </Button>
           </PopoverTrigger>
           <PopoverContent className="w-[200px]">
-            <AccountUI />
+            <AuthButtons />
           </PopoverContent>
         </Popover>
       </div>

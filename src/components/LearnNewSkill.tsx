@@ -26,7 +26,7 @@ const responsive = {
   },
 };
 
-export const ScrollList: FC = () => {
+export const LearnNewSkill: FC = () => {
   return (
     <div className="container mx-auto">
       <div className="flex justify-start">

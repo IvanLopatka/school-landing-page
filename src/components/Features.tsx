@@ -30,7 +30,7 @@ const items = [
   },
 ];
 
-export const SecondFrame: FC = () => {
+export const Features: FC = () => {
   return (
     <div className="container mx-auto mb-10 flex flex-wrap items-center justify-center gap-3 min-[430px]:gap-6">
       {items.map((item) => (
