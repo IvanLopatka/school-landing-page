@@ -23,7 +23,7 @@ export const NavigationBar: FC = () => {
     <nav className="fixed top-0 right-0 left-0 z-20 mx-auto mb-10 flex items-center justify-between bg-white px-4 py-4 drop-shadow-md sm:static sm:container sm:mb-15 sm:px-0 sm:drop-shadow-none">
       <div className="flex w-full items-center justify-between gap-x-6 sm:w-auto sm:gap-x-24">
         <Drawer direction="left">
-          <DrawerTrigger>
+          <DrawerTrigger asChild>
             <Button className="bg-transparent sm:hidden">
               <Image
                 src="/Vector.svg"
