@@ -1,4 +1,5 @@
 'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { FC } from 'react';
@@ -14,6 +15,7 @@ import {
 import {
   Drawer,
   DrawerContent,
+  DrawerTitle,
   DrawerTrigger,
 } from '@/components/ui/drawer';
 import { AuthButtons } from './AuthButtons';
@@ -34,6 +36,7 @@ export const NavigationBar: FC = () => {
             </Button>
           </DrawerTrigger>
           <DrawerContent>
+            <DrawerTitle />
             <DrawerMenu />
           </DrawerContent>
         </Drawer>
