@@ -5,7 +5,14 @@ import Link from 'next/link';
 import { FC } from 'react';
 import React from 'react';
 import { DrawerMenu } from './DrawerMenu';
+import { DialogWindow } from './DialogWindow';
 import { Button } from '@/components/ui/button';
+import {
+  Dialog,
+  DialogContent,
+  DialogTitle,
+  DialogTrigger,
+} from '@/components/ui/dialog';
 import {
   Popover,
   PopoverContent,
@@ -82,15 +89,25 @@ export const NavigationBar: FC = () => {
       </div>
 
       <div className="font-sourceSansPro flex items-center gap-[10px]">
-        <button className="hidden sm:block">
-          <Image
-            src="/bx_search.svg"
-            alt="Search"
-            width={24}
-            height={24}
-          />
-        </button>
-
+        <Dialog>
+          <DialogTrigger asChild>
+            <Button
+              variant="outline"
+              className="hidden shrink-0 border-none bg-white !shadow-none sm:block"
+            >
+              <Image
+                src="/bx_search.svg"
+                alt="Search"
+                width={24}
+                height={24}
+              />
+            </Button>
+          </DialogTrigger>
+          <DialogContent>
+            <DialogTitle />
+            <DialogWindow />
+          </DialogContent>
+        </Dialog>
         <div className="hidden gap-[10px] lg:flex">
           <button className="text-button">Login</button>
           <button className="bg-button rounded-[5px] px-[16px] py-[8px] text-base text-[16px] text-white">
