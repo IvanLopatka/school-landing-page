@@ -80,9 +80,9 @@ export const MostPopularCourses: FC = () => {
         </button>
       </div>
 
-      <div className="relative flex flex-row flex-wrap justify-center gap-10">
+      <div className="relative flex flex-row flex-wrap justify-center gap-5 lg:gap-10">
         {courses.map((course, index) => (
-          <div className="w-1/2 md:w-[30%]" key={index}>
+          <div className="w-[45vw] md:w-[30%]" key={index}>
             <CourseCard
               iconTitle={course.iconTitle}
               iconAlt={course.iconAlt}
