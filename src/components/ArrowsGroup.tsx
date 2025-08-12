@@ -16,12 +16,12 @@ export const ArrowsGroup: FC<Props> = ({
       <CustomCarouselArrow
         onClick={previous}
         direction="left"
-        className="left-0 border-1 border-[#09B451]"
+        className="left-0 flex border-1 border-[#09B451]"
       />
       <CustomCarouselArrow
         onClick={next}
         direction="right"
-        className="right-0 border-1 border-[#09B451]"
+        className="right-0 flex border-1 border-[#09B451]"
       />
     </div>
   );

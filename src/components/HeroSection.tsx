@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export const HeroSection: React.FC = () => {
   return (
-    <div className="relative container mx-auto mt-20 mb-20 w-full overflow-hidden rounded-[50px] p-6">
+    <div className="relative container mx-5 mt-20 mb-20 w-full overflow-hidden rounded-[50px] p-6 sm:mx-auto">
       <div className="relative mx-auto flex max-w-7xl flex-col justify-between gap-4 lg:flex-row">
         {/* Left content */}
         <div className="relative z-10 space-y-8 lg:w-[70%]">

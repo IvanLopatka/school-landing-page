@@ -15,7 +15,7 @@ export const CustomCarouselArrow: FC<
     <button
       onClick={onClick}
       className={twMerge(
-        'absolute z-30 flex h-15 w-15 justify-center rounded-full bg-white active:bg-gray-200',
+        'absolute z-30 hidden h-15 w-15 justify-center rounded-full bg-white active:bg-gray-200 md:flex',
         direction === 'left' ? 'left-6' : 'right-6',
         className
       )}
