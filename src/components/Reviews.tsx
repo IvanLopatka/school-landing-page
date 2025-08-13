@@ -92,6 +92,7 @@ export const Reviews: FC = () => {
             renderButtonGroupOutside
             transitionDuration={50}
             partialVisible={true}
+            swipeable={false}
             customButtonGroup={<ArrowsGroup />}
           >
             {items.map((item) => (
