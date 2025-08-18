@@ -30,14 +30,15 @@ export const LearnNewSkill: FC = () => {
   return (
     <div className="container mx-auto">
       <div className="flex justify-start">
-        <h1 className="Poppins px-4 text-3xl font-semibold">
+        <h1 className="Poppins px-5 text-3xl font-semibold lg:px-0">
           Learn A New Skill In Two Hours
         </h1>
       </div>
       <Carousel
-        itemClass="px-2"
+        itemClass="px-3 lg:px-0"
         arrows
         infinite
+        sliderClass="gap-0 lg:gap-5"
         className="mx-auto max-w-screen"
         responsive={responsive}
         autoPlay={false}

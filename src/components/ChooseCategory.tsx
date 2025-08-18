@@ -52,7 +52,7 @@ const responsive = {
 export const ChooseCategory: FC = () => {
   return (
     <div className="container mx-auto">
-      <div className="flex justify-between px-4">
+      <div className="flex justify-between px-4 md:px-0">
         <h1 className="Poppins text-xl font-semibold text-wrap sm:text-2xl md:text-3xl">
           Choose favourite course from top cartegories
         </h1>
@@ -62,13 +62,13 @@ export const ChooseCategory: FC = () => {
       </div>
       <div>
         <Carousel
-          itemClass="px-3"
+          itemClass="px-3 lg:px-0"
           arrows
           infinite
           className="mx-auto max-w-screen"
           responsive={responsive}
           autoPlay={false}
-          sliderClass="h-[50%] md:w-max"
+          sliderClass="h-[50%] gap-0 lg:gap-5 md:w-max"
           keyBoardControl={true}
           transitionDuration={50}
           partialVisible={true}

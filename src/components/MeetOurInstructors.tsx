@@ -33,11 +33,11 @@ export const MeetOurInstructors: FC = () => {
   return (
     <div className="container mx-auto mt-5 mb-20 justify-center">
       <div className="mb-15 flex w-full">
-        <h1 className="Poppins px-4 text-3xl font-semibold max-[1000px]:text-2xl">
+        <h1 className="Poppins px-5 text-3xl font-semibold max-[1000px]:text-2xl lg:px-0">
           Meet our instructors
         </h1>
       </div>
-      <div className="flex flex-wrap justify-center gap-5">
+      <div className="flex flex-wrap justify-center gap-6">
         {instructors.map((instructor) => (
           <div
             key={instructor.name}

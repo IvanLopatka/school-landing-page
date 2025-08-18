@@ -71,7 +71,7 @@ export const Reviews: FC = () => {
 
       <div>
         <div className="mb-5 flex flex-col">
-          <h3 className="OpenSans px-4 text-3xl font-semibold md:text-5xl">
+          <h3 className="OpenSans px-5 text-3xl font-semibold md:text-5xl lg:px-0">
             What Our
             <p className="font-bold text-green-600">
               Students

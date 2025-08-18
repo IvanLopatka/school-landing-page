@@ -3,8 +3,8 @@ import Image from 'next/image';
 
 export const HeroSection: React.FC = () => {
   return (
-    <div className="relative container mx-5 mt-20 mb-20 w-full overflow-hidden rounded-[50px] p-6 sm:mx-auto">
-      <div className="relative mx-auto flex max-w-7xl flex-col justify-between gap-4 lg:flex-row">
+    <div className="relative container mt-20 mb-20 w-full overflow-visible rounded-[50px] p-5">
+      <div className="relative flex max-w-7xl flex-col justify-between gap-4 lg:flex-row">
         {/* Left content */}
         <div className="relative z-10 space-y-8 lg:w-[70%]">
           <div className="flex max-h-[270px] w-full max-w-[600px] flex-col space-y-4">
@@ -12,8 +12,9 @@ export const HeroSection: React.FC = () => {
               Quality{' '}
               <span className="text-green-600">
                 Education <br />
-              </span>{' '}
-              By Any Means Necessary.
+              </span>
+              By Any Means
+              <br /> Necessary.
             </h1>
           </div>
 
@@ -23,7 +24,7 @@ export const HeroSection: React.FC = () => {
         </div>
 
         {/* Right content */}
-        <div className="relative mt-12 ml-auto scale-[0.8] justify-end overflow-visible lg:mt-0 lg:w-1/2 lg:scale-none">
+        <div className="relative mt-12 ml-5 scale-[0.8] justify-end lg:mt-0 lg:w-1/2 lg:scale-none">
           <div className="relative max-w-[405px] lg:max-w-full">
             <Image
               src="/i-m-prepared-exam.png"
@@ -68,7 +69,7 @@ export const HeroSection: React.FC = () => {
               </p>
             </div>
           </div>
-          <div className="bg-bg-palette absolute top-[-5%] right-[6%] -z-1 h-[110%] w-[110px] lg:rounded-r-[2rem]"></div>
+          <div className="bg-bg-palette absolute right-[-12%] bottom-[-100%] -z-10 h-[350%] w-[110px] lg:right-[6%] lg:h-[110%] lg:rounded-r-[2rem]"></div>
         </div>
       </div>
       <div className="absolute bottom-[-20%] left-[-20%] -z-10 h-[700px] w-[700px] rounded-full bg-radial from-[var(--gradient-color)] to-white opacity-10 blur-3xl" />

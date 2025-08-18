@@ -29,7 +29,7 @@ const items = [
 export const GoodEducation: FC = () => {
   return (
     <div className="container mx-auto flex flex-col">
-      <h4 className="Poppins mb-5 px-4 text-3xl font-semibold text-wrap lg:mb-10">
+      <h4 className="Poppins mb-5 px-5 text-3xl font-semibold text-wrap lg:mb-10 lg:px-0">
         We Bring The Good Education To Life
       </h4>
       <div className="flex flex-col justify-center gap-x-10 lg:flex-row lg:justify-start">
@@ -67,7 +67,7 @@ export const GoodEducation: FC = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col px-1">
           <h4 className="Poppins ml-5 text-xl font-semibold text-wrap sm:text-2xl md:text-5xl md:leading-15">
             Let Your Education Do <br></br> The Walking
           </h4>

@@ -62,9 +62,9 @@ export const courses = [
 
 export const MostPopularCourses: FC = () => {
   return (
-    <div className="container mx-auto mt-5 mb-20 justify-center">
+    <div className="container mx-auto mt-5 mb-20 justify-center p-4 lg:p-0">
       <div className="mb-15 flex w-full justify-between">
-        <h1 className="Poppins px-4 text-3xl font-semibold max-[1000px]:text-2xl">
+        <h1 className="Poppins text-3xl font-semibold max-[1000px]:text-2xl">
           Most Popular courses
         </h1>
         <button className="bg-button flex h-[46px] w-[130px] gap-1 rounded-[30px] px-4 py-2 max-[1000px]:scale-[0.9]">
@@ -80,7 +80,7 @@ export const MostPopularCourses: FC = () => {
         </button>
       </div>
 
-      <div className="relative flex flex-row flex-wrap justify-center gap-5 lg:gap-10">
+      <div className="relative flex flex-row flex-wrap justify-between gap-y-5">
         {courses.map((course, index) => (
           <div className="w-[45vw] md:w-[30%]" key={index}>
             <CourseCard
