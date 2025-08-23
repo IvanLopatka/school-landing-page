@@ -29,7 +29,7 @@ import { AuthButtons } from './AuthButtons';
 
 export const NavigationBar: FC = () => {
   return (
-    <nav className="fixed top-0 right-0 left-0 z-20 mx-auto mb-10 flex items-center justify-between bg-white px-4 py-4 drop-shadow-md sm:static sm:container sm:mb-15 sm:px-0 sm:drop-shadow-none lg:p-0">
+    <nav className="fixed top-0 right-0 left-0 z-20 mx-auto mb-10 flex items-center justify-between bg-white px-1 py-4 drop-shadow-md sm:static sm:container sm:mb-15 sm:px-0 sm:drop-shadow-none lg:p-0">
       <div className="flex w-full items-center justify-between gap-x-6 sm:w-auto sm:gap-x-24">
         <Drawer direction="left">
           <DrawerTrigger asChild>
@@ -91,10 +91,7 @@ export const NavigationBar: FC = () => {
       <div className="font-sourceSansPro flex items-center gap-[10px]">
         <Dialog>
           <DialogTrigger asChild>
-            <Button
-              variant="outline"
-              className="hidden shrink-0 border-none bg-white !shadow-none sm:block"
-            >
+            <Button className="hidden shrink-0 border-none bg-white !shadow-none lg:inline-block">
               <Image
                 src="/bx_search.svg"
                 alt="Search"

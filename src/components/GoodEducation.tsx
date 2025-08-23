@@ -28,8 +28,8 @@ const items = [
 
 export const GoodEducation: FC = () => {
   return (
-    <div className="container mx-auto flex flex-col">
-      <h4 className="Poppins mb-5 px-5 text-3xl font-semibold text-wrap lg:mb-10 lg:px-0">
+    <div className="container mx-auto mb-12 lg:mb-24 flex flex-col">
+      <h4 className="Poppins mb-5 px-4 text-3xl font-semibold text-wrap lg:mb-10 lg:px-0">
         We Bring The Good Education To Life
       </h4>
       <div className="flex flex-col justify-center gap-x-10 lg:flex-row lg:justify-start">

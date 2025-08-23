@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export const HeroSection: React.FC = () => {
   return (
-    <div className="relative container mt-20 mb-20 w-full overflow-visible rounded-[50px] p-5">
+    <div className="relative container mt-20 mb-6 w-full overflow-visible rounded-[50px] pl-5 lg:mb-20 lg:pl-0">
       <div className="relative flex max-w-7xl flex-col justify-between gap-4 lg:flex-row">
         {/* Left content */}
         <div className="relative z-10 space-y-8 lg:w-[70%]">
@@ -24,7 +24,7 @@ export const HeroSection: React.FC = () => {
         </div>
 
         {/* Right content */}
-        <div className="relative mt-12 ml-5 scale-[0.8] justify-end lg:mt-0 lg:w-1/2 lg:scale-none">
+        <div className="relative mt-12 mr-0 ml-5 scale-[0.8] justify-end lg:mt-0 lg:mr-4 lg:flex lg:w-1/2 lg:scale-none">
           <div className="relative max-w-[405px] lg:max-w-full">
             <Image
               src="/i-m-prepared-exam.png"
@@ -69,7 +69,7 @@ export const HeroSection: React.FC = () => {
               </p>
             </div>
           </div>
-          <div className="bg-bg-palette absolute right-[-12%] bottom-[-100%] -z-10 h-[350%] w-[110px] lg:right-[6%] lg:h-[110%] lg:rounded-r-[2rem]"></div>
+          <div className="bg-bg-palette absolute right-[-12%] bottom-[-100%] -z-10 h-[300%] w-[110px] lg:right-[-3%] lg:bottom-[-20] lg:h-[110%] lg:rounded-r-[2rem]"></div>
         </div>
       </div>
       <div className="absolute bottom-[-20%] left-[-20%] -z-10 h-[700px] w-[700px] rounded-full bg-radial from-[var(--gradient-color)] to-white opacity-10 blur-3xl" />

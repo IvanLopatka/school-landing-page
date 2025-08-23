@@ -32,7 +32,7 @@ const items = [
 
 export const Features: FC = () => {
   return (
-    <div className="z-0 container mx-auto mb-10 flex flex-wrap items-center justify-center gap-4 px-1 min-[430px]:gap-6 md:justify-between lg:px-0">
+    <div className="z-0 container mx-auto mb-30 flex flex-wrap items-center justify-center gap-4 px-1 min-[430px]:gap-6 md:justify-between lg:px-0">
       {items.map((item) => (
         <div
           key={item.title}

@@ -28,7 +28,7 @@ const responsive = {
 
 export const LearnNewSkill: FC = () => {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto mb-12 lg:mb-24">
       <div className="flex justify-start">
         <h1 className="Poppins px-5 text-3xl font-semibold lg:px-0">
           Learn A New Skill In Two Hours

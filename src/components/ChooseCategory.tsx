@@ -68,7 +68,7 @@ export const ChooseCategory: FC = () => {
           className="mx-auto max-w-screen"
           responsive={responsive}
           autoPlay={false}
-          sliderClass="h-[50%] gap-0 lg:gap-5 md:w-max"
+          sliderClass="gap-0 lg:gap-5 w-max"
           keyBoardControl={true}
           transitionDuration={50}
           partialVisible={true}
@@ -81,7 +81,7 @@ export const ChooseCategory: FC = () => {
         >
           {categories.map((categorie, index) => (
             <div
-              className="h-full rounded-xl py-5"
+              className="h-[50%] py-5 lg:h-full"
               key={index}
             >
               <FavoriteCourses

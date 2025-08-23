@@ -62,8 +62,8 @@ export const courses = [
 
 export const MostPopularCourses: FC = () => {
   return (
-    <div className="container mx-auto mt-5 mb-20 justify-center p-4 lg:p-0">
-      <div className="mb-15 flex w-full justify-between">
+    <div className="container mx-auto mt-5 mb-12 justify-center p-4 lg:mb-24 lg:p-0">
+      <div className="mb-3 flex w-full justify-between">
         <h1 className="Poppins text-3xl font-semibold max-[1000px]:text-2xl">
           Most Popular courses
         </h1>

@@ -62,7 +62,7 @@ const items = [
 
 export const Reviews: FC = () => {
   return (
-    <div className="container mx-auto mt-5 justify-center">
+    <div className="container mx-auto mt-5 mb-12 justify-center lg:mb-24">
       <div className="mb-15 flex w-full justify-center">
         <h1 className="Poppins text-2xl font-semibold lg:text-3xl">
           Reviews
@@ -79,7 +79,7 @@ export const Reviews: FC = () => {
             Say About Us
           </h3>
         </div>
-        <div className="relative w-full">
+        <div className="relative lg:max-h-10">
           <Carousel
             itemClass="px-1 md:px-3"
             arrows={false}

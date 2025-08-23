@@ -31,7 +31,7 @@ const instructors = [
 
 export const MeetOurInstructors: FC = () => {
   return (
-    <div className="container mx-auto mt-5 mb-20 justify-center">
+    <div className="container mx-auto mt-5 mb-12 justify-center lg:mb-40">
       <div className="mb-15 flex w-full">
         <h1 className="Poppins px-5 text-3xl font-semibold max-[1000px]:text-2xl lg:px-0">
           Meet our instructors

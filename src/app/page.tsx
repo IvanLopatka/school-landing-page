@@ -11,7 +11,7 @@ import { InfoAndContacts } from '@/components';
 
 export default function Home() {
   return (
-    <div className="grid min-h-screen grid-rows-[auto_1fr_auto] items-center justify-center pl-2 font-[family-name:var(--font-geist-sans)]">
+    <div className="grid min-h-screen grid-rows-[auto_1fr_auto] items-center justify-center p-2 font-[family-name:var(--font-geist-sans)]">
       <NavigationBar />
       <HeroSection />
       <Features />
